@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <title>Znaczniki list</title>
+</head>
+<body>
+
+    <h1>Listy uporządkowane</h1>
+
+    <p>Tworzy się je przy użyciu znacznika "ol", z ang. ordered list, mają wcięcie z lewej strony.<br />
+        Każdy element listy musi być zapisany oddzielnie w znaczniku "li", z ang. list item. <br />
+        Można wybrać typ numerowania, należy w "ol" umieścić atrybut "type", jednak lepiej to zrobić w CSS.</p>
+    <ol>
+        <li>Ziemniaki</li>
+        <li>Ogórki</li>
+        <li>Pomidory</li>
+        <li>Fasola</li>
+        <li>Kukurydza</li>
+    </ol>
+
+    <h1>Listy nieuporządkowane</h1>
+
+    <p>Tworzy się je przy użyciu znacznika "ul", z ang. unordered list, mają wcięcie z lewej strony.<br />
+        Każdy element listy musi być zapisany oddzielnie w znaczniku "li", z ang. list item. <br />
+        Można wybrać typ numerowania, należy w "ol" umieścić atrybut "type", jednak lepiej to zrobić w CSS.</p>
+    <ul>
+        <li>Ziemniaki</li>
+        <li>Ogórki</li>
+        <li>Pomidory</li>
+        <li>Fasola</li>
+        <li>Kukurydza</li>
+    </ul>
+
+    <h1>Listy definicji</h1>
+
+    <p>Tworzy się je przy użyciu znacznika "dl", z ang. definition list.<br />
+        Każde pojęcie do wyjaśnenia musi być zapisane w elemencie "dt", z ang. definition term , a jego definicja w elemencie "dd"</p>
+    <dl>
+        <dt>Sashimi</dt>
+        <dd>Pokrojona surowa ryba podawana z dodatkami, takimi jak tarta rzodkiew daikon, korzeń imbiru, wasabi oraz sos sojowy.</dd>
+        <dt>Waga</dt>
+        <dd>Urządzenie służące do precyzyjnego odmierzania składników.</dd>
+        <dd>Potoczne określenie ciężaru ciała.</dd>
+        <dt>Scamorze</dt>
+        <dt>Scamorzo</dt>
+        <dd>Włoski ser</dd>
+    </dl>
+
+    <h1>Listy zagnieżdzone</h1>
+
+    <p>Tworzy się je przez dodanie kolejnego "ul" w elemencie "li". <br>
+        Jeśli są to listy nieuporządkowane to przeglądarka sama dobiera inne znaczki. </p>
+        <ul>
+            <li>Musy</li>
+            <li>Ciasta
+                <ul>
+                    <li>Rogaliki</li>
+                    <li>Szarlotka</li>
+                    <li>Karpatka</li>
+                    <li>Sernik wiedeński</li>
+                </ul>
+            </li>
+            <li>Tarty</li>
+        </ul>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <title>Znaczniki łącza</title>
+</head>
+<body>
+    <h1 id="top">Łącza do innych witryn / bezwzględne</h1>
+    <p>Łącza tworzy się przy użyciu elementu "a". <br /> 
+        Strona docelowa, z którą chcemy się połączyć, jest określana za pomocą atrubutu "href"</p>
+    <a href="http://www.wikipedia.org">Link do wikipedii</a>
+    
+    <!-- adresy url:
+        -bezwzględne,
+            czyli pełne adresy do innych witryn: http://www.wikipedia.org
+        -względne
+            czyli skrócone adresy do tej samej witryny, jeśli wszystkie strony znajdują się w tym samym katologu, to wartością
+            atrybutu "href" może być nazwa pliku: index.html
+    -->
+
+    <h1>Łącza do innych stron tej samej witryny / względne</h1>
+    <h2>Łącza tworzy się przy użyciu elementu "a".</h2>
+    <dl>
+        <dt><b>Ten sam katalog</b></dt>
+        <dd>Jeśli wszytskie strony umieszczone są w tym samym katalogu, to wartością atrybutu "href" "może być nazwaPliku.html" <br />
+        <a href="znacznikiList.html">Link do znaczników list</a> <br />
+        example: strona.html</dd>
+        
+
+        <dt><b>Katalog podrzędny</b></dt>
+        <dd>Jeśli strony umieszczone są w katalogu podrzędnym, to wartością "href" będzie "nazwaKataloguPodrzędnego/nazwaPliku.html" <br />
+        example: pulpit/strona.html</dd>
+        
+        <dt><b>Katalog w katalogu podrzędnym</b></dt>
+        <dd>Jeśli strony umieszczone są w katalogu katalogu podrzędnego, to wartością "href" będzie "nazwaKataloguPodrzędnego/nazwaDalszegoKataloguPodrzędnego/nazwaPliku.html" <br />
+        example: dawid/pulpit/strona.html</dd>
+
+        <dt><b>Katalog nadrzędny</b></dt>
+        <dd>Jeśli strony umieszczone są w katalogu nadrzędnym niż ten w którym znajduje się aktualna strona , to wartością "href" będzie "../nazwaPliku.html" <br />
+            Im wyzej jest strona do której chcemy uzyskać dostęp tym więcej dodajemy na początku "../"</dd>
+    </dl>
+
+    <h1>Łącza do maila</h1>
+    <p>Link do aplikacji poczty, wysyła maila na określony adres. <br />
+        Wygląda to tak:   < a href="mailto:osoba@example.com">Tekst_który_ma_być_wyświetlony< /a ></p>
+    <a href="mailto:dawifd54@gmail.com">Mail do Dawida</a>
+ 
+    <h1>Łącze do nowej strony na tej samej karcie/ otwiera stronę</h1>
+    <p>Wygląda to tak:   < a href="http://www.wikipedia.org">Link do wikipedii< a ></p>
+    <a href="http://www.wikipedia.org">Link do wikipedii</a>
+
+    <h1>Łącze do nowej karty</h1>
+    <p>Wygląda to tak:   < a href="http://www.wikipedia.org" target="_blank">Link do wikipedii< a ></p>
+    <a href="http://www.wikipedia.org" target="_blank">Link do wikipedii</a>
+
+    <h1>Łącza do określonych miejsc na tej samej stronie</h1>
+    <p>Dodajemy atrybut id="nazwa" do dowolnego znacznika, następnie w "href=#podanaWcześniejNazwa" </p>
+    <a href="#top">Przejdź na początek strony</a>
+
+    <h1>Łącza do konkretnych miejsc na innej stronie</h1>
+    <p>Na początku musi być #  - Wygląda to tak: < a href="pełnyLinkDoStrony#nazwaJakiegośID">wyświetlany_tekst< /a ></p>
+    <a href="https://pl.wikipedia.org/wiki/Jab%C5%82ko#Właściwości_jabłka">Właściwości jabłka</a>
+</body>
+</html>
