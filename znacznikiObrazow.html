@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <title>Znaczniki obrazów</title>
+</head>
+<body style="background-color: rgb(24, 26, 27); color: white">
+    <h1>Obrazy powinny...</h1>
+    <h2>Rozmiar powinien być wyrażony w pixelach, nie cm czy inch.</h2>
+    <ul>
+        <li>Mieć znaczenie.</li>
+        <li>Dostarczać informacji.</li>
+        <li>Tworzyć właściwy klimat.</li>
+        <li>Wyróżniać się na pierwszy rzut oka.</li>
+        <li>Pasować do palety barw.</li>
+    </ul>
+    <p>Ppi (pixels per inch) ma znaczenie tylko podczas drukowania. <b>Podstawowa ppi to 72</b><br />
+        Gdy obraz ma wiele kolorów => .jpeg <br />
+        Gdy obraz ma duże obszary takiego samego koloru (logo,diagramy) => .png<br />
+        Gdy obraz jest animacją => .gif</p>
+
+    <h1>Witryny sprzedające zdjęcia</h1>
+    <ul>
+        <li><a href="http://www.istockphoto.com" target="_blank">istockphoto</a></li>
+        <li><a href="http://www.gettyimages.com" target="_blank">gettyimages</a></li>
+        <li><a href="http://www.veer.com" target="_blank">veer</a></li>
+        <li><a href="http://www.sxc.hu" target="_blank">sxc</a></li>
+        <li><a href="http://www.fotolia.com" target="_blank">fotolia</a></li>
+    </ul>
+
+    <h1>Znacznik obrazów</h1>
+    <p>Znacznik "img" służy do dodawania zdjęć na stronę. Nie ma elementu zamykającego <del>/img</del><br />
+        Atrybuty:</p>
+    <dl>
+        <dt>src</dt>
+        <dd>Źródło pliku, zwykle względny adres URL. "images/apple.jpg"</dd>
+        <dt>alt</dt>
+        <dd>Zawiera opis obrazy, gdy ten nie będzie widoczny. <br />
+            Jeśli obraz jest mało ważny (np. kreska) element "alt" powinien zostać umieszczony, lecz pusty "".</dd>
+        <dt>title</dt>
+        <dd>Po najechaniu kursorem na obraz, pokaże się okno z opisem.</dd>
+        <dt>width</dt>
+        <dd>Określa szerokość obrazu w pixelach. <b>Teraz robi się to w CSS.</b></dd>
+        <dt>height</dt>
+        <dd>Określa wysokość obrazu w pixelach. <b>Teraz robi się to w CSS.</b></dd>
+        <dt>align</dt>
+        <dd>Wyrównuje obraz względem tekstu starą metodą. ("img" musi być w "p") <b>Teraz robi się to w CSS.</b><br />
+            Może mieć wartość: left, right. Zależnie od tego, obraz będzie oblany tekstem z prawej lub lewej strony.<br />
+            Może mieć wartość: top, middle, bottom. Zależnie od tego, obraz będzie oblany tekstem z góry, od środka lub z dołu.</dd>
+        <dt></dt>
+        <dd></dd>
+    </dl>
+    <img src="images/apple.jpg" alt="Obraz zawiera zwykłe jabłko." title="Czerwone zwykłe jabłko" width="375" height="283">
+
+    <p>Znacznik "figure" w html5, pozwala dodać obrazek/lub kilka wraz z jego opisem, który musi się znaleźć w el. "figcaption"</p>
+    <figure>
+        <img src="images/ptak1.jpg" alt="Ptak" title="Ptak 1" width="200" height="200">
+        <img src="images/ptak2.jpg" alt="Ptak" title="Ptak 2" width="200" height="200">
+        <br />
+        <figcaption>
+            Zdjęcia ptaków.
+        </figcaption>
+    </figure>
+    
+</body>
+</html>
