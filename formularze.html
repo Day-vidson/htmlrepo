@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <title>Formularze</title>
+</head>
+<body>
+    <h1>Struktura formularzy</h1>
+    <p>
+        Aby stworzyć formularz pierwszym elementem będzie "form". Pola formularza umieszczamy w el. "p" <br />
+        Ważna atrybuty: action, method, id<br /> <br />
+        action="pełnyAdreshttp" nalezy podać adres strony na którą zostaną przesłane informacje <br/>
+        method="GET/POST" wybranie metody jaką zostaną przesłane informacje. <br />
+        GET - do pobierania informacji z serwera/na końcu adresu url <br />
+        POST - wrażliwe dane/ przesyłany jest plik/ formularz jest bardzo duży/ dodaje lub usuwa informacje z bazy danych <br />
+        id - nadaje "nazwę" <br />
+        size="x" - nie używany/ teraz w CSS/ określał ile znaków ma być widocznych w polu (można wpisać więcej) x - liczba <br />
+    </p>
+    <hr>
+
+    <h1>Pola tekstowe</h1>
+    <h1><a href="https://www.w3schools.com/html/html_form_input_types.asp" target="_blank">input types</a></h1>
+    <p>
+        Element "input atrybuty /" - tworzy kilka rodzaji pól. <br />
+        maxlength="liczba" - określa ile znaków może się znaleźć w polu. <br />
+        type="text" tworzy pole tekstowe. (są też inne) <br />
+        type="password" - tworzy pole do wprowadzenia hasła
+    </p>
+    <form action="http://www.jakaswitryna.com/login.php">
+        <p>Nazwa użytkownika:
+            <input type="text" name="username" id="enterUsername" size="15" maxlength="30" />
+        </p>
+        <p>Hasło:
+            <input type="password" name="password" id="enterPassword" size="15" maxlength="30" />
+        </p>
+    </form>
+
+    <h1>Duże pole tekstowe</h1>
+    <p>El. "textarea" pozwala stworzyć wsielowierszowe pola wprowadzania. Cols i rows lepiej określać w CSS</p>
+    <form action="http://www.jakaswitryna.com/login.php">
+        <p>Co myślisz o tym koncercie?</p>
+        <textarea name="comments" cols="50" rows="4">
+            Tutaj wpisz swój komentarz...
+        </textarea>
+    </form>
+    <hr>
+
+    <h1>Pola wyboru</h1>
+    <h2>Jednokrotnego</h2>
+    <p>
+        type="radio" - pozwala wybrać tylko jedną z opcji. Jeśli zaznaczymy jedną opcję można zaznaczyć inną, lecz nie da się odznaczyć w ogóle. <br />
+        Atrybut "name" jest przesyłany na serwer wraz z wartością "value"
+        Atrybut ' checked="checked" ' zaznacza domyślnie jedną z opcji. 
+    </p>
+    <form action="http://www.jakaswitryna.com/profile.php">
+        <p>Wybierz swój ulubiony rodzaj muzyki: <br />
+            <input type="radio" name="genre" value="rock" checked="checked"/>Rock
+            <input type="radio" name="genre" value="Pop" />Pop
+            <input type="radio" name="genre" value="Jazz" />Jazz
+        </p>
+    </form>
+
+    <h2>Wielokrotnego</h2>
+    <p>
+        type="checkbox" pozwala zaznaczać dowolną liczbę opcji i odznaczać je.
+    </p>
+    <form action="http://www.jakaswitryna.com/profile.php">
+        <p>Wybierz swoją ulubioną usługę muzyczną: <br />
+            <input type="checkbox" name="service" value="iTunes" checked="checked"/>iTunes
+            <input type="checkbox" name="service" value="Last.fm" />Last.fm
+            <input type="checkbox" name="service" value="Spotify" checked="checked"/>Spotify
+        </p>
+    </form>
+    <hr>
+
+    <h1>Listy rozwijane</h1>
+    <p>
+        Tworzy się je w "form", przy użyciu elementu "select", a w nim są jeszcze "option".
+    </p>
+    <form action="http://www.jakaswitryna.com/profile.php">
+        <p>Jakiego urzadzenia używasz do słuchania muzyki?</p>
+        <select name="devices">
+            <option value="ipod">iPoda</option>
+            <option value="radio" selected="selected">radia</option>
+            <option value="computer">komputera</option>
+        </select>
+    </form>
+
+    <h2>Lista rozwijana Wielokrotnego wyboru</h2>
+    <p>Można wybrać kilka z rozwijanej listy. Aby wybrac więcej musi być atrybut multiple="multiple".</p>
+    <form action="http://www.jakaswitryna.com/profile.php">
+        <p>
+            Na jakich instrumentach grasz? <br />
+            (Możesz wybrać więcej niż jedną opcję przytrzymując Ctrl podczas zaznaczania lub Command na komputerach Mac.)
+        </p>
+        <select name="instruments" size="3" multiple="multiple">
+            <option value="guitar" selected="selected">gitara</option>
+            <option value="drums">perkusja</option>
+            <option value="keyboard" selected="selected">keyboard</option>
+            <option value="bass">gitara basowa</option>
+        </select>
+    </form>
+    <hr>
+
+    <h1>Pole przesyłania plików</h1>
+    <p>W formularzu trzeba dodać method="post", input type="file"</p>
+    <form action="http://www.jakaswitryna.com/upload.php">
+        <p>Prześlij plik muzyczny w formacie MP3</p>
+        <input type="file" name="userSong"/> <br />
+        <input type="submit" value="Prześlij" />
+    </form>
+    <hr>
+
+    <h1>Przycisk przesyłający</h1>
+    <p>Używane są do przesyłania informacji na serwer</p>
+    <form action="http://www.jakaswitryna.com/profile.php">
+        <p>Subskrybuj nasz biuletyn informacyjny:</p>
+        <input type="email" name="email" />
+        <input type="submit" name="subscribe" value="Subskrybuj" />
+    </form>
+
+    <h1>Przycisk z obrazem</h1>
+    <p>Jeśli chcemy aby przycisk był obrazem input type="image" src="images/subscribe.jpg" </p>
+    <form action="http://www.jakaswitryna.com/profile.php">
+        <p></p>
+        <input type="email" name="email" />
+        <input type="image" src="images/subscribe.jpg" width="100" height="20" />
+    </form>
+
+    <h1>Przycisk</h1>
+    <p>Jest bardzo customowy</p>
+    <form action="http://www.jakaswitryna.com/profile.php">
+        <p></p>
+        <button><img src="images/subscribe.jpg" alt="add" width="100" height="20"/>Dodaj</button>
+        <input type="hidden" name="bookmark" value="liryka" />
+    </form>
+    <hr>
+
+    <h1>Etykiety (label)</h1>
+    <p>Etykiety opisują pola można to zrobić na 2 sposoby. Atrybut "for" odwołuje się do jakiegoś "id" wcześniej przez nas ustalonego</p>
+    <!-- 1 sposób -->
+        <label>Wiek: <input type="number" name="age" min="1" max="150"/></label>
+        <br />
+        <!-- 2 sposób -->
+        <input type="radio" name="gender" id="female" value="f">
+        <label for="female">kobieta</label>
+        <input type="radio" name="gender" id="male" value="m">
+        <label for="male">mężczyzna</label>
+    <hr>
+
+    <h1>Grupowanie elementów formularzy</h1>
+    <p>
+        Powiązane ze sobą pola formularzy można ze sobą grupować. Jest do tego potrzebny el. "fieldset" Wygląd ramki można określić w CSS <br />
+        Aby umieścić coś w "fieldset" potrzebny jest element "legend".
+    </p>
+    <fieldset>
+        <legend>Informacje kontaktowe</legend>
+        <label>Adres e-mail:<br />
+            <input type="email" name="email" />
+        </label><br />
+        <label>Numer telefonu:<br />
+            <input type="number" name="mobile" />
+        </label><br />
+        <label>Miasto:<br />
+            <input type="text" name="city" />
+        </label><br />
+    </fieldset>
+    <hr>
+
+    <h1>Weryfikacja pól formularzy</h1>
+    <p>Znacznik "required" pozwala zweryfikowac czy pole zostało w ogóle uzupełnione.</p>
+    <form action="http://www.jakaswitryna.com/login.php" method="POST">
+        <label for="username">Nazwa użytkownika:</label>
+        <input type="text" name="username" id="username" required="required"><br />
+        <label for="password">Hasło:</label>
+        <input type="text" name="password" id="password" required="required">
+        <input type="submit" value="Zaloguj się">
+    </form>
+    <hr>
+
+    <h1>Pole daty</h1>
+    <p>Pozwala wprowadzać datę w łatwy sposób.</p>
+    <form action="http://www.jakaswitryna.com/bookings" method="POST">
+        <label for="depart">Data wylotu:</label>
+        <input type="date" name="depart" id="depart" />
+        <input type="submit" value="Prześlij" />
+    </form>
+
+    <h1>Pole adresu e-mail</h1>
+    <p>input type="email" pozwala wprowadzić email. Sprawdza czy został dobrze zapisany: example@host.com</p>
+    <form action="http://www.jakaswitryna.com/login.php">
+        <p>Proszę podać swój adres e-mail:</p>
+        <input type="email" name="email" id="email" />
+        <input type="submit" value="Prześlij">
+    </form>
+
+    <h1>Pole adresu URL</h1>
+    <p>Pozwala wprowadzić adres URL</p>
+    <form action="http://www.jakaswitryna.com/login.php">
+        <p>Proszę wprowadzić adres URL swojej strony:</p>
+        <input type="url" name="website" />
+        <input type="submit" value="Prześlij" />
+    </form>
+
+    <h1>Pole wyszkuwiania</h1>
+    <p>Pozwala coś wyszukać</p>
+    <form action="http://www.jakaswitryna.com/search.php">
+        <p>Szukaj:</p>
+        <input type="search" name="search"/>
+        <input type="submit" value="Szukaj" />
+    </form>
+</body>
+</html>
