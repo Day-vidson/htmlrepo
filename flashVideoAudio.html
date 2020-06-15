@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <title>Flash, wideo i audio</title>
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+    <script type="text/javascript">
+        swfobject.embedSWF("folderNadrzedny/nazwaPliku.swf", "jakiesID/np:bird", "szerokość/400", "wysokość/300", "wersjaFlasha/8.0.0");
+    </script>
+</head>
+
+<body>
+    <h1>Pliki flash</h1>
+
+    <p>Pliki flash mają rozszerzenie ".fla" aby można było ich używać na stronach www trzeba je zapisać w formacie ".swf"</p>
+    <p>Aby dodać animację/film do strony, można to zrobić skryptami JavaScript. <br />
+        Opisany przykład zamienia zawatorść div o danym id na podany plik. Jeśli przeglądarka 
+        nie obsługuje flasha zostania wyświetlone to co wcześniej zawierał div.<br />
+        <b>Plik animacji/filmu musi być w formacie ".swf"</b></p>
+
+    <div id="bird">
+        <p>Animacja ptaszka.</p>
+    </div>
+
+    
+</body>
+</html>
