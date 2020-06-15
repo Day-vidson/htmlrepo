@@ -2,6 +2,10 @@
 <html lang="pl">
 <head>
     <title>Znaczniki tekstowe</title>
+    <meta name="description" content="Znaczniki tekstowe w html" />
+    <meta name="keywords" content="html, znaczniki" />
+    <meta http-equiv="author" content="Dawid Chmielewski" />
+    <!-- <meta http-equiv="expires" content="Fri, 04 Apr 2014 23:59:59 GMT" /> -->
 </head>
 <body style="background-color: rgb(24, 26, 27); color: white">
     <!-- znacznik to: <p>    atrybut (jakby właściwość) to: lang="pl" wartość atrybutu zapisana jest w cudzysłowiu -->
@@ -21,7 +25,7 @@
     <p>Znacznik "sup" sprawia, że tekst zostaje zapisany w górnym indeksie. example<sup>example</sup> </p>
     <p>Znacznik "sub" sprawia, że tekst zostaje zapisany w dolnym indeksie. example<sub>example</sub></p>
 
-    <p>Jeśli zapiszę coś z 2 lub          więcej spacjami, przeglądarka          
+    <p>Jeśli zapiszę coś z      2       lub          więcej     spacjami, przeglądarka          
         napisze tylko jedną.</p>
     <p>Znacznik nowej linijki "br /", Jestem Dawid <br /> Mieszkam w Byczynie</p>
     <p>Znacznik "hr /" tworzy linię oddzielającą tekst <hr /></p>
@@ -45,5 +49,20 @@
     <p>Znacznik "ins" podkreśla tekst, a znacznik "del" przekreśla go. To był <del>najgorszy</del> <ins>najlepszy</ins> pomysł, jaki kiedykolwiek przyszedł jej do głowy.</p>
     <p>Znacznik "s" oznacza informacje które się przedawniły, których jednak nie należy usuwać ze strony. </p><p>Nowoczesny laptop</p><p><s>Kosztował 2599 zł</s></p><p>A teraz tylko 1899 zł</p>
     <p>Znacznik "u" oznacza to samo co znacznik "s" tylko że u był używany w html4 i już się go nie używa. <u>example</u></p>
+    <p>Znacznik "div" pozwala grupować elementy wchodzące w skład strony. Dobrze jest umieścić komentarz po "/div" zamknięciu.</p>
+    <p>Znacznik "span" służy do odróżnienia zawartości od reszty <span> treści.</span> Można dodać atrybuty "class" i "id" w celu określenia stylu w CSS.</p>
+    <p>Znacznik "iframe" to okno umieszczone na innej stronie przez które można oglądać inną stronę. <br />
+        Powinnien mieć atrybuty "src", wielkość lepiej określić w CSS, "frameborder" = 1-jeśli ramka ma być wyświetlona, 0-jeśli nie. <br />
+        Atrybut "scrolling" decyduje czy strona w iframe będzie scrollowana czy nie. (yes/no/auto) - W html5 to jest : seamless="seamless"</p>
+    <iframe src="https://srednia.com/zwykla" frameborder="0" height="500" width="1000" scrolling="yes"></iframe>
+
+    <h1>Przekazywanie informacji o stronie</h1>
+
+    <p>Służy do tego znacznik "meta" wraz z atrybutami, określany w "head" strony. <br />
+        Strona może zostać usunięta z pamięci podręcznej jeśli użyjemy meta-expires. Format daty musi być taki jak na tej stronie.</p>
+
+    <h1>Znaki specjalne!</h1>
+    
+    <p>Niektórych znaków nie da się umieścić na stronie tak poprostu. Trzeba je zapisać "kodem" np.: &euro; , &pound; , &lt;, &gt;</p>
 </body>
 </html>
