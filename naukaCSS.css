@@ -1,0 +1,15 @@
+h1 {
+    color: aqua;
+}
+
+#case {
+    color: red;
+}
+
+td:first-of-type {
+    color: rgb(155, 255, 0);
+}
+
+th {
+    color: rgb(255, 0, 200);
+}

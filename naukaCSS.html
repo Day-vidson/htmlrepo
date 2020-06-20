@@ -2,11 +2,85 @@
 <html lang="pl">
 <head>
     <title>CSS</title>
+    <link rel="stylesheet" href="naukaCSS.css" type="text/css" />
 </head>
 <body>
     <h1>CSS</h1>
     <img src="images/css.png" width="500" height="228">
 
+    <h2 id="case">W CSS uwzględniana jest wielkość liter/ Case sensitive !</h2>
+
+    <p>
+        Jeśli chcemy umieścić CSS w osobnym pliku trzeba wstawić el. "link" w headzie. Atrybuty: href="lokalizacjaPliku", rel="relacja", type="typPliku"<br />
+        Można umieścić więcej niż jeden arkusz stylów. Np.: jeden do kolorów i czcionek, drugi do układu el. na stronie
+    </p>
+    <p>
+        Można też umieścić kod CSS w pliku html razem z zawartością całej strony. Należy wtedy użyć elementu "style", który powiniein zostać umieszczony w headzie. <br />
+        Można tak robić jeśli cała witryna posiada tylko jedną stronę. W innym wypadku zalecane jest używanie zewnętrzynych arkuszy stylów (mniej kodu do późniejszego edytowania).
+    </p>
+    <p>
+        Można też nadać styl jednemu konkretnemu elementowi. &#60; p style="color: red" &#62; Teraz się tego nie stosuje.
+    </p>
+
+    <h1>Rodzaje selektorów</h1>
+
+    <table border="1">
+        <tr>
+            <th>Selektor</th>
+            <th>Znaczenie</th>
+            <th>Przykład</th>
+        </tr>
+        <tr>
+            <td>Selektor uniwersalny</td>
+            <td>Odnosi się do wszytskich elementów strony</td>
+            <td>* {} <br />
+                Odnosi się do wszytskich elementów na stronie</td>
+        </tr>
+        <tr>
+            <td>Selektor typu</td>
+            <td>Odnosi się do elementów o konkretnej nazwie</td>
+            <td>h1, h2, h3 {} <br />
+                Odnosi się do &#60;h1&#62; &#60;h2&#62; &#60;h3&#62;</td>
+        </tr>
+        <tr>
+            <td>Selektor klasy</td>
+            <td>Odnosi się do podanej klasy</td>
+            <td>.note {} <br />
+                Odnosi się do wszytskich el. klasy "note" <br />
+                p.note {} <br />
+                Odnosi się do wszytskich &#60;p&#62; z klasy "note"</td>
+        </tr>
+        <tr>
+            <td>Selektor identyfikatora</td>
+            <td>Odnosi się do podanego "id"</td>
+            <td>#introduction {} <br />
+                Odnosi się do id="introduction"</td>
+        </tr>
+        <tr>
+            <td>Selektor elementu dziecka</td>
+            <td>Odnosi się do el., które są dziećmi innego, określonego elementu <br />
+                (tylko jeden poziom niżej)</td>
+            <td>li > a {} <br />
+                Odnosi się do wszytskich "a" które są w bezpośrednio w "li", lecz nie do innych "a"</td>
+        </tr>
+        <tr>
+            <td>Selektor elementu podobnego</td>
+            <td>Odnosi się do wszystkich elementów potomnych, innego el.</td>
+            <td>p a {} <br />
+                Czyli do każdego "a" w "p", nawet jeśli "a" jest w jeszcze innym el.</td>
+        </tr>
+        <tr>
+            <td>Selektor el. sąsiadujących bezpośrednio</td>
+            <td>Odnosi się do pierwszego &#60;p&#62; za &#60;h1&#62;, do kolejnych już nie</td>
+            <td>h1 + p {}</td>
+        </tr>
+        <tr>
+            <td>Ogólny sel. el. sąsiadujących</td>
+            <td>Odnosi się do el. sąsiad. z innym el., choć niekoniecznie bezpośrednio</td>
+            <td>h1 - p {} <br />
+                Jeśli na stronie są dwa el. &#60;p&#62; sąsiad. z el. &#60;h1&#62;, ta reguła odnosi się do obu z nich</td>
+        </tr>
+    </table>
     
 </body>
 </html>
