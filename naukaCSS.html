@@ -8,11 +8,12 @@
     <h1>CSS</h1>
     <img src="images/css.png" width="500" height="228">
 
-    <h2 id="case">W CSS uwzględniana jest wielkość liter/ Case sensitive !</h2>
+    <h2 id="important">W CSS uwzględniana jest wielkość liter/ Case sensitive !</h2>
 
     <p>
         Jeśli chcemy umieścić CSS w osobnym pliku trzeba wstawić el. "link" w headzie. Atrybuty: href="lokalizacjaPliku", rel="relacja", type="typPliku"<br />
-        Można umieścić więcej niż jeden arkusz stylów. Np.: jeden do kolorów i czcionek, drugi do układu el. na stronie
+        Można umieścić więcej niż jeden arkusz stylów. Np.: jeden do kolorów i czcionek, drugi do układu el. na stronie <br />
+        Można też użyć tego samego arkusza stylów dla każdej strony. wystarczy wstawić el. "link" i podpiąć ten sam plik CSS.
     </p>
     <p>
         Można też umieścić kod CSS w pliku html razem z zawartością całej strony. Należy wtedy użyć elementu "style", który powiniein zostać umieszczony w headzie. <br />
@@ -72,7 +73,8 @@
         <tr>
             <td>Selektor el. sąsiadujących bezpośrednio</td>
             <td>Odnosi się do pierwszego &#60;p&#62; za &#60;h1&#62;, do kolejnych już nie</td>
-            <td>h1 + p {}</td>
+            <td>h1 + p {} <br />
+                Te elementy muszą być na tym samym poziomie. np: oba w jednym &#60;p&#62;</td>
         </tr>
         <tr>
             <td>Ogólny sel. el. sąsiadujących</td>
@@ -81,6 +83,33 @@
                 Jeśli na stronie są dwa el. &#60;p&#62; sąsiad. z el. &#60;h1&#62;, ta reguła odnosi się do obu z nich</td>
         </tr>
     </table>
-    
+
+    <h1>Ważność selektorów</h1>
+
+    <p>
+        Jeśli w akruszu stylów znajdują się dwie lub więcej reguły odnoszące się do danego el. to <span id="important">ostatnia z nich będzie miała pierszeństwo.</span><br />
+        Lub jeśli reguła jest bardziej szczegółowa od innej też będzie miała pierszeństwo. np: &#60;h1&#62; jest bardziej szczegółowe od &#60;*&#62; / p#intro jest bardziej szczegół. niż p<br />
+        Można też dodać "!important" za właściwością by zaznaczyć że ona powinna być ważniejsza od innych reguł odnoszących się do tego samego elementu.
+    </p>
+
+    <h1>Dziedziczenie</h1>
+
+    <p>
+        Elementy mogą dziedziczyć po sobie niektóre właściwości. W tym celu wystarczy właściwości przypisać wartość "inherit" np.: body {font-family: Arial;} p {font-family: inherit;}
+    </p>
+
+    <h1>Strony do testowania wyglądu naszym stron</h1>
+
+    <p>
+        Przed opublikowaniem strony, należy ją przetestować w kilku przeglądarkach, gdyż każda może troszkę inaczej interpretować kod CSS. <br />
+        Pomocne stronki:
+    </p>
+    <ul>
+        <li><a href="http://www.browsershots.org" target="blank">browsershots.org</a></li>
+        <li><a href="http://www.crossbrowsertesting.com" target="blank">crossbrowsertesting.com</a></li>
+        <p>Oraz pomocne stronki do wyszukiwania błędów CSS. / browser quirk</p>
+        <li><a href="http://www.quirksmode.org" target="blank">quirksmode.org</a></li>
+    </ul>
+
 </body>
 </html>
