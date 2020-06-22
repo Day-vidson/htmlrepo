@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <link rel="stylesheet" href="koloryCSS.css" type="text/css">
+    <title>Kolory CSS</title>
+</head>
+<body>
+    <h1>Kolory</h1>
+    <p>
+        W arkuszu stylów kolory można definiować na 3 sposoby. <br />
+        <ol>
+            <li>Nazwą: <br />
+                p {color: red;}</li>
+            <li>Kodem szesnastkowym <br />
+                p {color: #55ff00;}</li>
+            <li>wartością rgb <br />
+                p {color: rgb(200, 100, 50);}</li>
+        </ol>
+    </p>
+
+    <h2>Kolor tła</h2>
+    <p>
+        "background-color" określa kolor tła 
+    </p>
+
+    <h2>Nieprzezroczystość</h2>
+    <p>
+        "opacity" określa przezroczytośc elementu. Ma wartość z zakresu 0.0 - 1.0
+        Ten sam efekt można uzyskać używając wł. "rgba". <br />
+        Pierwsze trzy argumenty to wartości rgb, a ostatni to kolor alpha - przezroczystość (wartość 0.0 - 1.0).
+    </p>
+
+    <h1>Nowy sposób określania kolorów/ hsl, hsla</h1>
+    <p>
+        HSL - to nowy spobób okreslania kolorów wprowadzony w CSS3. Jest przedstawiany w formie koła. <br />
+        <u>Tak się go zapisuje <span id="important"> (analogicznie do rgb)</span> hsl(100%,100%,100%,) / hsla(100%,100%,100%,0.5)</u><br />
+        odcień - jest wyrażany jako miara kąta (0 - 360) <br />
+        nasycenie - jako procent. &nbsp;&nbsp;&nbsp; <span id="important"> 100% - kolor nasycony </span>&nbsp;&nbsp;&nbsp; 0% - kolor szarości. <br />
+        jasność - jako procent.  &nbsp;&nbsp;&nbsp; 100% - kolor biały &nbsp;&nbsp;&nbsp; <span id="important"> 50% - kolor normalny </span>&nbsp;&nbsp;&nbsp; 0% - kolor czarny. <br />
+        wartość alfa - przezroczystość (0.0 - 1.0) 1 - widoczny normalnie  
+    </p>
+    <p>
+        Starsze przeglądarki nie rozpoznają wartości hsl i hsla, więc najpierw określamy rgb, a później hsl.
+    </p>
+
+    <div id="skala">
+        <h1 id="exampleh1">Skala pH</h1>
+        <p class="fourteen">14.0 BARDZO ZASADOWE</p>
+        <p class="thirteen">13.0</p>
+        <p class="twelve">12.0</p>
+        <p class="eleven">11.0</p>
+        <p class="ten">10.0</p>
+        <p class="nine">9.0</p>
+        <p class="eight">8.0</p>
+        <p class="seven">7.0 NEUTRALNE</p>
+        <p class="six">6.0</p>
+        <p class="five">5.0</p>
+        <p class="four">4.0</p>
+        <p class="three">3.0</p>
+        <p class="two">2.0</p>
+        <p class="one">1.0</p>
+        <p class="zero">0.0 BARDZO KWASOWE</p>
+    </div>
+</body>
+</html>
