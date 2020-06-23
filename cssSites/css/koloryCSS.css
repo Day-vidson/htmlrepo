@@ -75,3 +75,22 @@ p.thirteen {
 p.fourteen {
     background-color: rgb(0, 136, 221);
 }
+
+.float{
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:40px;
+    right:40px;
+    background-color:#00aaff;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size: 18px;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+.my-float{
+    margin-top:22px;
+    font-size: 18px;
+}

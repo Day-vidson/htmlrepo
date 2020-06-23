@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
+
     <title>Flash, wideo i audio</title>
 
     <!-- Do animacji wystarczy tylko ścieżka do pliku (jako pierwszy argument) -->
@@ -66,7 +70,7 @@
     <p style="color:red"><b>Jeśli będziemy zmieniać wielkość okna flash playery będą się bugować, jeśli użyjemy "video" problem nie będzie występował.</b></p>
     
     <!-- MOŻNA DODAĆ "p" ALE NIE TRZEBA, WSZYSTKO POMIĘDZY "video" ZOSTANIE WYŚWIETLONE -->
-    <video src="sciezkaDoPliku - video/puppy.mp4" poster="sciezkaDoMiniaturki - images/puppy.jpg" width="400" height="300" preload controls loop>
+    <video src="video/example.mp4" poster="sciezkaDoMiniaturki - images/puppy.jpg" width="400" height="300" preload controls loop>
         <p>Film o szczeniaku.</p>
     </video>
 
@@ -94,17 +98,21 @@
     
     <h2  style="color:greenyellow">Dobrze jest podać mp4 jako pierwszy z "source". Inaczej nie będzie działać na iPadzie</h2>
     <video poster="images/puppy.jpg" width="400" height="300" preload controls loop>
-        <source src="video/puppy.mp4" type='video/mp4;codecs="avc.42E01, mp4a.40.2"'>
-        <source src="video/puppy.webm" type="video/webm">
-        <p>Film o bawiącym się szczeniaku.</p>
+        <source src="video/example.mp4" type="video/mp4">
+        <source src="video/example.webm" type="video/webm">
+        <p>Przykładowy film.</p>
     </video>
 
     <h2>Audio</h2>
 
     <p>Wszystko tak samo jak w video.</p>
 
-    <audio src="audio/dzwiek2.mp3" controls autoplay>
+    <audio src="audio/example.mp3" controls>
         <p>Nie możesz usłyszeć bo nie masz HTML 5</p>
     </audio>
+
+    <a href="../index.html" class="float">
+        <i class="fa fa-map my-float"></i>
+    </a>
 </body>
 </html>
