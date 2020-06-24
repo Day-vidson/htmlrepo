@@ -3,6 +3,22 @@ body {
     color: white;
 }
 
+h1 {
+    color: aqua;
+}
+
+td:first-of-type {
+    color: rgb(155, 255, 0);
+}
+
+th {
+    color: rgb(255, 0, 200);
+}
+
+#important {
+    color: red !important;
+}
+
 .float{
     position:fixed;
     width:60px;
