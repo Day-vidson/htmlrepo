@@ -7,6 +7,15 @@ body {
     color: red;
 }
 
+@font-face {
+    font-family: "Hey Kiddo demo";
+    src: url("../fonts/customFont.ttf");
+}
+
+#exampleFont {
+    font-family: "Hey Kiddo demo";
+}
+
 .float{
     position:fixed;
     width:60px;

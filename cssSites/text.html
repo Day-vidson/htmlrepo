@@ -21,15 +21,50 @@
     <dl>
         <dt>font-family</dt>
         <dd>
-            "font-family" określa rodzinę czcionek, zwykle podaję się ich kilka. (gdy komputer nie posiada jednej z nich próbuje następną) <br />
+            Określa rodzinę czcionek, zwykle podaję się ich kilka. (gdy komputer nie posiada jednej z nich próbuje następną) <br />
             Jeśli nazwa czcionki składa się z więcej niż jednego słowa, należy zapisać ją w cudzysłowie. sans-serif / "Courier New"
         </dd>
+
         <dt>font-size</dt>
         <dd>
             Określa wielkość czcionki. Można to zrobić za pomocą pikseli, wartości procentowej, lub wartości "em". <br />
             <span id="important">Domyślny rozmiar czcionki na stronie to "16px"</span>
         </dd>
 
+        <dt>@font-face</dt>
+        <dd>
+            Pozwala na używanie czcionek nie zainstalowanych na komputerze użytkownika. Trzeba podać ścieżkę do czcionki. <br />
+            <span id="exampleFont">Example</span><br />
+            <a href="https://www.fontsquirrel.com/tools/webfont-generator">Konwerter formatów czcionek</a><br />
+            <span id="important">Trzeba umieścić różne formaty jednej czcionki.</span>
+            <ol>
+                <p>Kolejność:</p>
+                <li>eot</li>
+                <li>woff</li>
+                <li>ttf/oft</li>
+                <li>svg</li>
+            </ol>
+        </dd>
+
+        <dt>font-weight</dt>
+        <dd>
+            Pozwala na utworzenie pogrubionego tekstu. wartości= normal/bold
+        </dd>
+
+        <dt>font-style</dt>
+        <dd>
+            Wyświetla tekst kursywą. Może mieć wartości: normal, italic-(kursywa), oblique-(czcionka pochyła).
+        </dd>
+
+        <dt>text-transform</dt>
+        <dd>
+            Zmienia wielkości liter w tekście. Wartości: uppercase, lowercase, capitalize-(każde słowo zaczyna się z dużej litery).
+        </dd>
+
+        <dt>text-decoration</dt>
+        <dd>
+            Określa wygląd tekstu. Służy do usuwania podkreślenia z łączy. Może mieć wartości: none-(usuwa wszystkie el. dekoracyjne), underline, overline, line-throught, blink-(tekst pojawia się i znika)
+        </dd>
     </dl>
 
     <a href="../index.html" class="float">
