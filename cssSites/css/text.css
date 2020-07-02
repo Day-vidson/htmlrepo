@@ -1,6 +1,7 @@
 body {
     background-color: rgb(24, 26, 27);
     color: white;
+    font-size: 16px;
 }
 
 #important {
@@ -33,4 +34,8 @@ body {
 .my-float{
     margin-top:22px;
     font-size: 18px;
+}
+
+#shadow {
+    text-shadow: 1px 1px #f700ff;
 }
