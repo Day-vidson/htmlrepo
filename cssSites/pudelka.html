@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/pudelka.css" type="text/css">
+
+    <title>Pudełka</title>
+</head>
+<body>
+    <h1>Wymiary pudełka</h1>
+
+    <h2>width, height</h2>
+    <div>
+        <p id="p1">
+        El. są umieszczane w "pudełkach". Aby określić ich wielkość, używa się width i height. (px, em, %) <br />
+        <span id="important">(Procent względem el. nadrzędnego)</span>
+        </p>
+    </div>
+
+    <h2>min-width, max-width, min-height, max-height</h2>
+    <p>
+        Określają min i max wymiary okna
+    </p>
+    <table border="1">
+        <tr>
+            <th>Owoc</th>
+            <th>Informacje</th>
+            <th>Cena</th>
+        </tr>
+        <tr>
+            <td><img src="images/apple.jpg" alt="apple"></td>
+            <td id="description">
+                Jabłko – jadalny, kulisty owoc drzew z rodzaju jabłoń Malus. Jabłka odmian uprawnych o mieszańcowym pochodzeniu,
+                uznawanych za gatunek jabłoń domowa Malus domestica, są istotnym komercyjnie owocem o soczystym i chrupkim miąższu. Są spożywane na surowo,
+                 a także po obróbce kulinarnej.</td>
+            <td>2zł</td>
+        </tr>
+    </table>
+
+    <h2>overflow</h2>
+    <p>
+        Jeśli zawartość nie mieści się w jakimś oknie to może ona zostać wyświetlona poza nim (co spowoduje niezły bałagan), 
+        lub to małe okno może dostać przycisk scroll (wtedy będzie można przewijac zawartość) <br />
+        <dl>
+            <p>Wartości overflow:</p>
+
+            <dt>hidden</dt>
+            <dd>ukrywa dalszą zawartość</dd>
+
+            <dt>scroll</dt>
+            <dd>dodaje scrolla poziomego i pionowego</dd>
+
+            <dt>visible</dt>
+            <dd>niezły bałagan, wyświetla wszystko, jedno na drugim</dd>
+
+            <dt>auto</dt>
+            <dd>sam dodaje scrolla kiedy trzeba</dd>
+        </dl>
+        <a href="https://www.w3schools.com/cssref/tryit.asp?filename=trycss_overflow">Więcej o overflow</a>
+    </p>
+
+    
+    
+
+    <h2>border</h2>
+    <p id="border">Jeden element w którym można określić cały wygląd obramowania. <span id="important">Ale można podać tylko JEDEN kolor!</span></p>
+
+    <h2>border-width</h2>
+    <p>Określa grubość obramowania. Zgodnie ze wskazówkami zegara, począwszy od góry.</p>
+    <ul>
+        <p>Wartości:</p>
+        <li>thin</li>
+        <li>medium</li>
+        <li>thick</li>
+        <li>px</li>
+        <p>Można wprowadzić inną wartość dla każdej krawędzi ramki.</p>
+        <li>border-top-width: 1px;</li>
+        <li>border-right-width: 1px;</li>
+        <li>border-bottom-width: 1px;</li>
+        <li>border-left-width: 1px;</li>
+        <li id="important">albo border-width: 1px 1px 1px 1px;</li>
+    </ul>
+
+    <h2>border-style</h2>
+    <p>Pozwala kontrolować styl obramowania.</p>
+    <ul>
+        <p>Wartości:</p>
+        <li>solid</li>
+        <li>dotted</li>
+        <li>dashed</li>
+        <li>double</li>
+        <li>groove</li>
+        <li>ridge</li>
+        <li>inset</li>
+        <li>outset</li>
+        <li>hidden/none</li>
+        <li id="important">Można określić styl każdej krawędzi osobno, analogicznie jak z grubością.</li>
+    </ul>
+
+    <h2>border-color</h2>
+    <p>Pozwala kontrolować kolor krawędzi. Analogicznie jak z grubością.</p>
+    
+    <h1>Odstępy</h1>
+
+    <h2 id="obramowanie">Obramowanie</h2>
+    <p>Każde pudełko elementu ma obramowanie (nawet jeśli jest niewidoczne lub ma 0 px). Obramowanie to odziela brzeg jednego pudełko od drugiego.</p>
+
+    <h2 id="margines">Margines</h2>
+    <p>Margines jest obszarem znajdującym się na zewnątrz obramowania elementu. Można używac marginesu, by zwiększyć odstęp między obramowaniami dwóch sąsiadujących ze sobą elementów.</p>
+
+    <h2 id="wypelnienie">Wypełnienie</h2>
+    <p>Wypełnienie to odstęp pomiędzy obramowaniem a jego zawartością. Powiększanie wypełnienia poprawia czytelność zawartości elementu.</p>
+
+    <img src="images/napis.png">
+
+    
+    <h2>margin</h2>
+    <p>To odstęp pomiędzy elementami.</p>
+
+    <h2>padding</h2>
+    <p>To odstęp pomiędzy zawartością, a obramowaniem.</p>
+
+    <img src="images/odstepy.jpg">
+    <a href="../index.html" class="float">
+        <i class="fa fa-map my-float"></i>
+    </a>
+</body>
+</html>
