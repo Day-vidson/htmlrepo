@@ -14,7 +14,7 @@
     <div>
         <p id="p1">
         El. są umieszczane w "pudełkach". Aby określić ich wielkość, używa się width i height. (px, em, %) <br />
-        <span id="important">(Procent względem el. nadrzędnego)</span>
+        <span class="important">(Procent względem el. nadrzędnego)</span>
         </p>
     </div>
 
@@ -64,7 +64,7 @@
     
 
     <h2>border</h2>
-    <p id="border">Jeden element w którym można określić cały wygląd obramowania. <span id="important">Ale można podać tylko JEDEN kolor!</span></p>
+    <p id="border">Jeden element w którym można określić cały wygląd obramowania. <span class="important">Ale można podać tylko JEDEN kolor!</span></p>
 
     <h2>border-width</h2>
     <p>Określa grubość obramowania. Zgodnie ze wskazówkami zegara, począwszy od góry.</p>
@@ -79,7 +79,7 @@
         <li>border-right-width: 1px;</li>
         <li>border-bottom-width: 1px;</li>
         <li>border-left-width: 1px;</li>
-        <li id="important">albo border-width: 1px 1px 1px 1px;</li>
+        <li class="important">albo border-width: 1px 1px 1px 1px;</li>
     </ul>
 
     <h2>border-style</h2>
@@ -95,7 +95,7 @@
         <li>inset</li>
         <li>outset</li>
         <li>hidden/none</li>
-        <li id="important">Można określić styl każdej krawędzi osobno, analogicznie jak z grubością.</li>
+        <li class="important">Można określić styl każdej krawędzi osobno, analogicznie jak z grubością.</li>
     </ul>
 
     <h2>border-color</h2>
@@ -116,12 +116,77 @@
 
     
     <h2>margin</h2>
-    <p>To odstęp pomiędzy elementami.</p>
+    <p>To odstęp pomiędzy elementami. Można określić z każdej strony osobno, lub razem.  Można też margin: 10px 20px; 10px - góra i dół 20px - lewa i prawa</p>
 
     <h2>padding</h2>
-    <p>To odstęp pomiędzy zawartością, a obramowaniem.</p>
+    <p>To odstęp pomiędzy zawartością, a obramowaniem. Można określić z każdej strony osobno, lub razem. Można też padding: 10px 20px; 10px - góra i dół 20px - lewa i prawa</p>
 
     <img src="images/odstepy.jpg">
+
+    <h1>Wyśrodkowanie zawartości</h1>
+
+    <h2>Wyśrodkowanie el. na stronie</h2>
+    <p id="wysrodkowanie">
+        Aby wysrodkować zawartość na stronie należy przypisać: margin-left, margin-right : auto.<br />
+        <span class="important">Oraz przypisać wartość width, w przeciwnym razie el. zajmie całą stronę.</span>
+    </p>
+
+    <h1>Zamienianie el. wewnątrzwierszwych na blokowe</h1>
+    <p>
+        El. "display" sprawi że el. blokowy zostanie zamieniowny na wewnątrzwierszwy i odwrotnie.
+        <dl>
+            <p>Wartości:</p>
+
+            <dt>inline</dt>
+            <dd>Sprawi, że el. blokowy zostanie potraktowany jako el. wewnątrzwierszwych</dd>
+
+            <dt>block</dt>
+            <dd>Sprawi, że el. wewnątrzwierszwych zostanie potraktowany jako el. blokowy</dd>
+
+            <dt>inline-block</dt>
+            <dd>
+                Sprawi, że el. blokowy zostanie rozmieszczony na stronie w sposób charakterystyczny dla el. wewnątrzwierszwych i zachowa przy tym 
+                pozostałe cechy charakterystyczne dla el. blokowych
+            </dd>
+        
+            <dt>none</dt>
+            <dd>Ukrywa el. na stronie</dd>
+        </dl>
+        (Aby utworzyć listę, wyświetlającą el. jeden po drugim w jednym wierszu, należy "li" przypisać wartość "inline".)
+    </p>
+
+    <h1>Ukrywanie el. pudełek</h1>
+    <p>
+        El. "visibility" decyduje czy el. zostanie wyświetlony czy nie, zawsze zostawi miejsce nawet jeśli el. nie zostanie wyświetlony. (hidden, visible)
+    </p>
+    <ul>
+        <li class="testList">example</li>
+        <li class="testList">example</li>
+        <li class="testList" id="invisible">example</li>
+        <li class="testList">example</li>
+        <li class="testList">example</li>
+    </ul>
+
+    <h1>Style pudełek</h1>
+
+    <h2>Obrazy obramowań</h2>
+    <p>
+        El. "border-image" pozwala zastosować obraz jako krawędz obramowania. Dzieli podany obraz na 9 części. (kwadratów) a następnie wyświetla go jako ramkę. <br />
+        W starszych przeglądarkach służą do tego właściwości: "-moz-border-image:" (mozilla firefox) oraz "-webkit-border-image:" (chrome i safari) i "-o-border-image:" (opera), 
+        każdy działa tak samo jak "border-image" z CSS 3
+    </p>
+    <ol>
+        <p>Wł. "border-image" wymaga podania trzech informacji:</p>
+        <li>adresu URL obrazu;</li>
+        <li>sposobu, w jaki należy obraz podzielić;</li>
+        <li>
+            sposobu jak te fragemnty narysować: stretch - rozciąganie fragmentów, repeat - powtarzanie fragmentów, round - powtarzanie el., 
+            jeśli nie będzie pasował zostanie delikatnie przeskalowany.
+        </li>
+    </ol>
+
+    <img src="images/border-image.png">
+
     <a href="../index.html" class="float">
         <i class="fa fa-map my-float"></i>
     </a>
