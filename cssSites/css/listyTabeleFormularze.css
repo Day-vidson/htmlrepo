@@ -1,0 +1,91 @@
+body {
+    background-color: rgb(24, 26, 27);
+    color: white;
+    font-size: 16px;
+}
+
+
+th {
+    color: lawngreen;
+}
+
+a {
+    color: lawngreen;
+}
+
+#styleZnaczników {
+    list-style-type: none;
+}
+
+#disc {
+    list-style-type: disc;
+}
+
+#circle {
+    list-style-type: circle;
+}
+
+#square {
+    list-style-type: square;
+}
+
+#decimal {
+    list-style-type: decimal;
+}
+
+#decimal-leading-zero {
+    list-style-type: decimal-leading-zero;
+}
+
+#lower-alpha {
+    list-style-type: lower-alpha;
+}
+
+#upper-alpha {
+    list-style-type: upper-alpha;
+}
+
+#lower-roman {
+    list-style-type: lower-roman;
+}
+
+#upper-roman {
+    list-style-type: upper-roman;
+}
+
+#imageList {
+    list-style-image: url(../images/znacznik.png);
+}
+
+.odstep {
+    margin: 10px 0px 0px 0px;
+}
+
+.important {
+    color: red;
+}
+
+/* Floating blue button
+    |
+    |
+    v
+*/
+
+.float{
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:40px;
+    right:40px;
+    background-color:#00aaff;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size: 18px;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+.my-float{
+    margin-top:22px;
+    font-size: 18px;
+}
