@@ -172,8 +172,14 @@
     <h2>Obrazy obramowań</h2>
     <p>
         El. "border-image" pozwala zastosować obraz jako krawędz obramowania. Dzieli podany obraz na 9 części. (kwadratów) a następnie wyświetla go jako ramkę. <br />
-        W starszych przeglądarkach służą do tego właściwości: "-moz-border-image:" (mozilla firefox) oraz "-webkit-border-image:" (chrome i safari) i "-o-border-image:" (opera), 
-        każdy działa tak samo jak "border-image" z CSS 3
+        <ul>
+            <p>W starszych przeglądarkach służą do tego właściwości:</p>
+            <li>"-moz-border-image:" (mozilla firefox)</li>
+            <li>"-webkit-border-image:" (chrome i safari)</li>
+            <li>"-o-border-image:" (opera) /też działa z -webikt- ?</li>
+            <p class="important">Każdy działa tak samo jak "border-image" z CSS 3</p>
+        </ul>
+        <br>
     </p>
     <ol>
         <p>Wł. "border-image" wymaga podania trzech informacji:</p>
@@ -184,8 +190,44 @@
             jeśli nie będzie pasował zostanie delikatnie przeskalowany.
         </li>
     </ol>
-
     <img src="images/border-image.png">
+
+    <h2>Cień pudełka</h2>
+
+    <p class="shadow">
+        El. "box-shadow" - pozwala wyświetlić cień wokół pudełka elementu.<br />
+        Pierwsza wartość to -lewa/+prawa.<br />
+        Druga to -góra/+dół.<br />
+        Trzecia to wartość rozmazania.<br />
+        Czwarta to rozpiętość cienia.<br />
+        <span class="important">słowo "inset" sprawia że, cień zostanie umieszczony wewnątrz pudełka.</span>
+    </p>
+
+    <p class="shadow2">
+        example
+    </p>
+
+    <h2>Zaokrąglone wierzchołki</h2>
+    
+    <p class="wierzcholki">
+        Polska, Rzeczpospolita Polska (RP) – państwo unitarne w Europie Środkowej, położone między Morzem Bałtyckim na północy a Sudetami i 
+        Karpatami na południu, w przeważającej części w dorzeczu Wisły i Odry.
+    </p>
+
+    <h2>Kształty eliptyczne</h2>
+
+    <p>
+        Za pomocą css3 można narysować kształty eliptyczne. Słuzy do tego el. "border-radius: x y" (px) x - szerokość, y - wysokość.<br />
+        Można określić "border-radius" dla każdego kąta osobno lub wszystkie razem. 
+        W tym przypadku najpierw podawane są cztery szerokości, a następnie po slashu cztery wysokości. (oddzielane spacją)
+    </p>
+
+    <p class="wierzcholki1"></p>
+
+    <p class="wierzcholki2"></p>
+
+    <p class="wierzcholki3"></p>
+
 
     <a href="../index.html" class="float">
         <i class="fa fa-map my-float"></i>
