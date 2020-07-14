@@ -13,6 +13,17 @@ a {
     color: lawngreen;
 }
 
+table {
+    display: inline-block;
+    margin: 10px;
+    border-spacing: 5px 10px;
+}
+
+td {
+    border: 1px solid rgb(0, 132, 255);
+    padding: 15px;
+}
+
 #styleZnaczników {
     list-style-type: none;
 }
@@ -55,6 +66,28 @@ a {
 
 #imageList {
     list-style-image: url(../images/znacznik.png);
+}
+
+#shortcut {
+    list-style: inside square;
+    width: 100px;
+}
+
+table.one {
+    empty-cells: show;
+}
+
+table.two {
+    empty-cells: hide;
+    
+}
+
+table.three {
+    border-collapse: collapse;
+}
+
+.shortcut {
+    margin: 10px 0px 0px 0px;
 }
 
 .odstep {

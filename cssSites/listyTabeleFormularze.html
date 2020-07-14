@@ -41,6 +41,83 @@
         <li class="odstep">example</li>
     </ul>
 
+    <h2>Zapis skrótowy</h2>
+    <p>
+        Wszystkie powyższe informacje można zapisać za pomocą el. "list-style". Można określić w nim styl znacznika lsty, jego obraz oraz położenie.
+    </p>
+    <ul id="shortcut">
+        <li class="shortcut">example</li>
+        <li class="shortcut">example</li>
+        <li class="shortcut">example</li>
+    </ul>
+
+    <h1>Tabele</h1>
+
+    <h2>Puste komórki</h2>
+    <p>
+        Przeglądarki traktują puste komórki trochę inaczej niż pozostałe. Aby określić ich wygląd można użyć el. "empty-cells". <br />
+        Przybiera on różne właściwości:
+    </p>
+    <dl>
+        <dt>show</dt>
+        <dd>Puste komórki będą wyświetlane.</dd>
+
+        <dt>hide</dt>
+        <dd>Puste komórki zostaną ukryte.</dd>
+
+        <dt>inherit</dt>
+        <dd>Puste komórki odziedziczą zachowanie z tabeli nadrzędnej. (jeśli jedna tabela będzie w innej)</dd>
+    </dl>
+
+    <table class="one">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td></td>
+        </tr>
+    </table>
+
+    <table class="two">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td></td>
+        </tr>
+    </table>
+
+    <h2>Odstępy pomiędzy komórkami</h2>
+
+    <p>
+        Aby określić odstępy pomiędzy sąsiadującymi komórkami tabeli, można użyć el. "border-spacing" / 
+        lub "border-collapse: separate;" ale wtedy trzeba podać też "border-spacing"<br />
+        Podajemy w niej dwie liczby:
+    </p>
+    <ul>
+        <li>Pierwsza - określa odstep w poziomie</li>
+        <li>Druga - określa odstep w pionie</li>
+    </ul>
+    <p>
+        Możemy też maksymalnie zbliżyć komórki do siebie, służy do tego el. "border-collapse: collapse" 
+        (Wtedy wsztyskie inne deklaracje "border-spacing" zostaną zignorowane.)
+    </p>
+
+    <table class="three">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td></td>
+        </tr>
+    </table>
+
     <a href="../index.html" class="float">
         <i class="fa fa-map my-float"></i>
     </a>
