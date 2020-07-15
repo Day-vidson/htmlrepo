@@ -98,6 +98,51 @@ table.three {
     color: red;
 }
 
+/* Newsletter example */
+
+form {
+    width: 350px;
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: right;
+}
+
+p.newsletter {
+    text-align: left;
+}
+
+input.newsletterInput {
+    border: 0px;
+    border-bottom: 1px solid #dcdcdc;
+    background-color: rgb(24, 26, 27);
+}
+
+#submitButton {
+    text-align: right;
+    background-color: #00aaff;
+    border: 1px solid #dcdcdc;
+    border-radius: 10px 10px;
+    padding: 5px;
+}
+
+#submitButton:hover {
+    border: 2px solid #a7a7a7;
+    text-decoration: underline;
+}
+
+#submitButton:active {
+    text-decoration: underline;
+    background-color: #0088cc;
+    border: 2px solid #a7a7a7;
+}
+
+#topic {
+    text-align: center;
+    padding: 0px;
+    font-size: large;
+}
+
 /* Floating blue button
     |
     |
