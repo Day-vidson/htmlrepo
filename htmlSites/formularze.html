@@ -156,17 +156,24 @@
         Powiązane ze sobą pola formularzy można ze sobą grupować. Jest do tego potrzebny el. "fieldset" Wygląd ramki można określić w CSS <br />
         Aby umieścić coś w "fieldset" potrzebny jest element "legend".
     </p>
-    <fieldset>
-        <legend>Informacje kontaktowe</legend>
-        <label>Adres e-mail:<br />
+    <fieldset style="width: fit-content;text-align: right;">
+        <legend style="text-align: center;">Informacje kontaktowe</legend>
+
+        <div>
+            <label>Adres e-mail:</label>
             <input type="email" name="email" />
-        </label><br />
-        <label>Numer telefonu:<br />
+        </div>
+
+        <div>
+            <label>Numer telefonu:</label>
             <input type="number" name="mobile" />
-        </label><br />
-        <label>Miasto:<br />
+        </div>
+
+        <div>
+            <label>Miasto:</label>
             <input type="text" name="city" />
-        </label><br />
+        </div>
+
     </fieldset>
     <hr>
 

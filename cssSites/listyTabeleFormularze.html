@@ -13,6 +13,7 @@
     <p>
         Właściwość "list-style-type" pozwala określić styl znaczników (punktorów) w listach.
     </p>
+
     <ul id="styleZnaczników">
         <p>Listy wypunktowane:</p>
         <li>none</li>
@@ -121,17 +122,35 @@
     <h1>Przykładowy formularz</h1>
 
     <form action="">
-        <p id="topic">Newsletter</p>
-        <p class="newsletter">Imię:
-            <input class="newsletterInput" type="text" />
-        </p>
-        <p class="newsletter">E-mail:
-            <input class="newsletterInput" type="email">
-        </p>
-        <p>
-            <input id="submitButton" type="submit" value="Subskrybuj"/>
-        </p>
+        <fieldset>
+            <legend>Newsletter</legend>
+
+            <div>
+                <label for="name" class="labels">Imię:</label>
+                <input class="newsletterInput" type="text" name="name"/>
+            </div>
+
+            <div>
+                <label for="email" class="labels">E-mail:</label>
+                <input class="newsletterInput" type="email" name="email"/>
+            </div>
+
+            <div>
+                <input id="submitButton" type="submit" value="Subskrybuj"/>
+            </div>
+            
+        </fieldset>
     </form>
+
+    <h1>Kursor</h1>
+
+    <p>
+        Aby zmienić wygląd kursora po najechaniu na element, należy dopisać do arkusza stylów właściwość "cursor" i nadać mu odpowiednią wartość.
+    </p>
+
+    <div id="cursor"></div>
+
+    <a href="https://www.w3schools.com/cssref/pr_class_cursor.asp" target="blank">Więcej o kursorach</a>
 
     <a href="../index.html" class="float">
         <i class="fa fa-map my-float"></i>

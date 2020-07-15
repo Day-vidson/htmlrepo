@@ -3,6 +3,14 @@ body {
     color: white;
 }
 
+a {
+    color: lawngreen;
+}
+
+h1 {
+    color: aqua;
+}
+
 #important {
     color: red;
 }
@@ -24,12 +32,4 @@ body {
 .my-float{
     margin-top:22px;
     font-size: 18px;
-}
-
-a {
-    color: lawngreen;
-}
-
-h1 {
-    color: aqua;
 }
