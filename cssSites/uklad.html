@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/uklad.css" type="text/css">
+
+    <title>Układ</title>
+</head>
+<body>
+
+    <h1>Pozycjonowanie elementów</h1>
+    <p>
+        W CSS dostępne są schematy pozycjonowania pozwalające na kontrolowanie układu strony:
+    </p>
+
+    <h2>Rozkład normalny</h2>
+    <p>
+        Każdy el. blokowy jest wyświetlany jeden pod drugim.
+    </p>
+    <div id="static"></div>
+
+    <h2>Umiejscawianie względne</h2>
+    <p>
+        Elementy są przesuwane z miejsca, które normalnie by zajmowały, ku górze, w prawo, lewo, lub ku dołowi.
+    </p>
+    <div id="relative"></div>
+
+    <h2>Umiejscawianie bezwzględne</h2>
+    <p>
+        Elementy są umieszczane względem el. w którym się znajdują. <br>
+        Nie są zaliczane do normalnego rozkładu strony, co oznacza, że przestahją mieć wpływ na pozostałe otaczające je elementy. <br />
+        (obszar zajmowany przez takie el. jest igonorowany) <br />
+        <span class="important">Takie el. przesuwają się gdy scrollujemy stronę.</span>
+    </p>
+    <div id="absolute"></div>
+
+    <h2>Miejsce ustalone</h2>
+    <p>
+        Jest to radzaj umiejscawiania bezwględnego, w którym położenie jest określane względem okna przeglądarki, a nie el. zawierającego. <br />
+        <span class="important">Takie el. nie przesuwają się gdy scrollujemy stronę, cały czas pozostają widoczne na ekranie w jednym miejscu. (blue hub button)</span>
+    </p>
+    <div id="fixed"></div>
+
+    <h2>Elementy pływające</h2>
+    <div id="float"></div>
+    <p>
+        Mechanizm el. pływających pozwala usunąć wybrany element z normalnego rozkładu strony i umieścić go tuż przy prawej lub lewej krawędzi ekranu. <br />
+        Taki element pływający staje się elementem blokowym, wokół którego rozmieszczana jest pozostała zawartość strony.
+    </p>
+
+    <hr>
+
+    <h1>Użycie</h1>
+
+    <p>
+        Służy do tego właściwość position. Może mieć różne wartości:
+    </p>
+    <dl>
+        <dt>static</dt>
+        <dd>
+            Jest to domyślny sposób wyświetlania zawartości przez przeglądarkę. Każdy el. blokowy jest umieszczany poniżej poprzedniego.
+        </dd>
+
+        <dt>relative</dt>
+        <dd>
+            Czyli umiejscawanie względem el. rodzica. Np: o 20% w prawo wzgl. podstawowego umieszczenia
+        </dd>
+    </dl>
+
+    <p>
+        Jeśli którykolwiek element zostanie usuięty z noralnego rozkładu strony to pudełka el. mogą na siebie nachodzić. <br />
+        W takich przypadkach właściwość <span class="important">"z-index"</span> pozwala określić króte z nich ma być wyświetlone powyżej drugiego.
+    </p>
+    <hr>
+
+    <a href="../index.html" class="float">
+        <i class="fa fa-map my-float"></i>
+    </a>
+</body>
+</html>
