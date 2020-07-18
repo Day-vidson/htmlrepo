@@ -16,17 +16,19 @@ dt {
     margin: 15px;
 }
 
-div#static {
+div {
+    text-align: center;
     width: 50px;
     height: 50px;
     background-color: #00aaff;
+    font-size: 40px;
+}
+
+div#static {
     position: static;
 }
 
 div#relative {
-    width: 50px;
-    height: 50px;
-    background-color: #00aaff;
     position: relative;
     /* --- Co trzeba dodać po relative? --- */
     top: 10px;
@@ -34,9 +36,6 @@ div#relative {
 }
 
 div#absolute {
-    width: 50px;
-    height: 50px;
-    background-color: #00aaff;
     position: absolute;
     /* --- Co trzeba dodać po absolute? --- */
     top: 460px;
@@ -44,9 +43,6 @@ div#absolute {
 }
 
 div#fixed {
-    width: 50px;
-    height: 50px;
-    background-color: #00aaff;
     position: fixed;
     /* --- Co trzeba dodać po fixed? --- */
     top: 0px;
