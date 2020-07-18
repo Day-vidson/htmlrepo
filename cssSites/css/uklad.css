@@ -16,6 +16,13 @@ dt {
     margin: 15px;
 }
 
+hr {
+    margin: 00px 0px;
+    overflow: auto;
+    width: 100%;
+    color: green;
+}
+
 div {
     text-align: center;
     width: 50px;
@@ -47,6 +54,26 @@ div#fixed {
     /* --- Co trzeba dodać po fixed? --- */
     top: 0px;
     right: 50px;
+}
+
+div#float {
+    float: left;
+}
+
+div#clear {
+    float: left;
+    border: 1px solid white;
+}
+
+div#clearLeft {
+    float: left;
+    border: 1px solid white;
+    clear: left;
+}
+
+#special {
+    clear: left;
+    margin-top: 140px;
 }
 
 .important {

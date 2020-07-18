@@ -29,7 +29,7 @@
     <h2>Umiejscawianie bezwzględne #3</h2>
     <p>
         Elementy są umieszczane względem el. w którym się znajdują. <br>
-        Nie są zaliczane do normalnego rozkładu strony, co oznacza, że przestahją mieć wpływ na pozostałe otaczające je elementy. <br />
+        Nie są zaliczane do normalnego rozkładu strony, co oznacza, że przestają mieć wpływ na pozostałe otaczające je elementy. <br />
         (obszar zajmowany przez takie el. jest igonorowany) <br />
         <span class="important">Takie el. przesuwają się gdy scrollujemy stronę.</span>
     </p>
@@ -51,10 +51,10 @@
 
     <hr>
 
-    <h1>Użycie</h1>
+    <h1>position</h1>
 
     <p>
-        Służy do tego właściwość position. Może mieć różne wartości:
+        Właściwość position może mieć różne wartości:
     </p>
     <dl>
         <dt>static</dt>
@@ -69,17 +69,47 @@
 
         <dt>absolute</dt>
         <dd>
-            
+            W przypadku tej wartości el. zostaje usuniety z normalnego rozkładu strony. Jest on umieszczony w jednym miejscu i porusza się kiedy scrollujemy stronę.
+        </dd>
+
+        <dt>fixed</dt>
+        <dd>
+            El. jest przesuwany wzgl. okna przeglądarki. Nie przesuwa się, cały czas zostaje na swoim miejscu.
+        </dd>
+
+        <dt>float</dt>
+        <dd>
+            Właściwość float pozwala usunąć element z normalnego rozkładu strony i umieścić go możliwie jak najdalej na lewo lub prawo wewnątrz el. zawierającego.
         </dd>
     </dl>
+
+    <h1>z-index</h1>
 
     <p>
         Jeśli którykolwiek element zostanie usuięty z noralnego rozkładu strony to pudełka el. mogą na siebie nachodzić. <br />
         W takich przypadkach właściwość <span class="important">"z-index"</span> pozwala określić króte z nich ma być wyświetlone powyżej drugiego.
     </p>
-    <hr>
+    
+    <h1>clear</h1>
 
+    <p>
+        Wł. "clear" pozwala poinformować przeglądarkę ,że dany el. (umieszczony wewnątrz tego samego elementu zawierającego) nie może stykać się krawędziami z innym el. <br />
+        Może mieć wartości: left, right, both, none. (czwarty kwadrat ma "clear: left" więc zostaje przeniesiony na dół)
+    </p>
 
+    <div id="clear"></div>
+    <div id="clear"></div>
+    <div id="clear"></div>
+
+    <div id="clearLeft"></div>
+    <div id="clear"></div>
+    <div id="clear"></div>
+
+    <h1 id="special">Tworzenie układów wielukolumnowych</h1>
+
+    <p>
+        
+    </p>
 
     <a href="../index.html" class="float">
         <i class="fa fa-map my-float"></i>
