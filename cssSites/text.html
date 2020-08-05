@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/text.css" type="text/css">
@@ -119,6 +120,8 @@
 
     <h1>Selektory atrybutów</h1>
 
+    <p id="important">Można zmienić "class" na każdy inny atrybut.</p>
+
     <table border="1">
         <tr>
             <th>Selektor</th>
@@ -165,8 +168,8 @@
                 Pozwala znaleźć konkretny atrybut, którego wartość rozpoczyna się podanym łańcuchem znaków.
             </td>
             <td>
-                p[attr^="d"] <br />
-                Odnosi się do wszystkich elementów &#60;p&#62;, których wartość attr rozpoczyna się od litery (łańcucha znaków) "d"
+                p[class^="d"] <br />
+                Odnosi się do wszystkich elementów &#60;p&#62;, których wartość class rozpoczyna się od litery (łańcucha znaków) "d"
             </td>
         </tr>
         <tr>
@@ -176,8 +179,8 @@
                 Pozwala znaleźć konkretny atrybut, którego wartość zawiera ciąg znaków.
             </td>
             <td>
-                p[attr^="do"] <br />
-                Odnosi się do wszystkich elementów &#60;p&#62;, których wartość attr zawiera ciąg znaków "do"
+                p[class^="do"] <br />
+                Odnosi się do wszystkich elementów &#60;p&#62;, których wartość class zawiera ciąg znaków "do"
             </td>
         </tr>
         <tr>
@@ -187,8 +190,8 @@
                 Pozwala znaleźć konkretny atrybut, którego wartość kończy się podanym ciągiem znaków.
             </td>
             <td>
-                p[attr$="g"] <br />
-                Odnosi się do wszystkich elementów &#60;p&#62;, których wartość attr kończy litera (łańcuch znaków) "g"
+                p[class$="g"] <br />
+                Odnosi się do wszystkich elementów &#60;p&#62;, których wartość class kończy litera (łańcuch znaków) "g"
             </td>
         </tr>
         

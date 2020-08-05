@@ -71,9 +71,27 @@ div#clearLeft {
     clear: left;
 }
 
+p#albo {
+    clear: both;
+    text-align: center;
+    font-size: 30px;
+}
+
+#column1of2 {
+    width: 650px;
+}
+
 #special {
-    clear: left;
     margin-top: 140px;
+}
+
+/* zamiast każdej kolumny osobno, można tak: */
+div[class^="column"] {
+    width: 300px;
+    height: fit-content;
+    float: left;
+    margin: 10px;
+    background-color: rgb(94, 94, 94);
 }
 
 .important {

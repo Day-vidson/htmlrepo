@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/uklad.css" type="text/css">
@@ -108,8 +109,35 @@
     <h1 id="special">Tworzenie układów wielukolumnowych</h1>
 
     <p>
-        
+        Można je tworzyć przy użyciu el. "div" i wł. "float: left", dobrze jest dodać wł. "margin" - która zapewni odstęp między poszczególnymi kolumnami.
     </p>
+
+    <div class="column1of3">
+        <h2>Tytuł</h2>
+        <p>Tekst</p>
+    </div>
+
+    <div class="column2of3">
+        <h2>Tytuł</h2>
+        <p>Tekst</p>
+    </div>
+
+    <div class="column3of3">
+        <h2>Tytuł</h2>
+        <p>Tekst</p>
+    </div>
+
+    <p id="albo">albo</p>
+
+    <div class="column1of2" id="column1of2">
+        <h2>Tytuł</h2>
+        <p>Tekst</p>
+    </div>
+
+    <div class="column2of2">
+        <h2>Tytuł</h2>
+        <p>Tekst</p>
+    </div>
 
     <a href="../index.html" class="float">
         <i class="fa fa-map my-float"></i>
