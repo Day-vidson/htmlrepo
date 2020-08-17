@@ -19,13 +19,13 @@
     <p>
         Każdy el. blokowy jest wyświetlany jeden pod drugim.
     </p>
-    <div id="static">1</div>
+    <div id="static" class="numbers">1</div>
 
     <h2>Umiejscawianie względne #2</h2>
     <p>
         Elementy są przesuwane z miejsca, które normalnie by zajmowały, ku górze, w prawo, lewo, lub ku dołowi.
     </p>
-    <div id="relative">2</div>
+    <div id="relative" class="numbers">2</div>
 
     <h2>Umiejscawianie bezwzględne #3</h2>
     <p>
@@ -34,17 +34,17 @@
         (obszar zajmowany przez takie el. jest igonorowany) <br />
         <span class="important">Takie el. przesuwają się gdy scrollujemy stronę.</span>
     </p>
-    <div id="absolute">3</div>
+    <div id="absolute" class="numbers">3</div>
 
     <h2>Miejsce ustalone #4</h2>
     <p>
         Jest to radzaj umiejscawiania bezwględnego, w którym położenie jest określane względem okna przeglądarki, a nie el. zawierającego. <br />
         <span class="important">Takie el. nie przesuwają się gdy scrollujemy stronę, cały czas pozostają widoczne na ekranie w jednym miejscu. (blue hub button)</span>
     </p>
-    <div id="fixed">4</div>
+    <div id="fixed" class="numbers">4</div>
 
     <h2>Elementy pływające #5</h2>
-    <div id="float">5</div>
+    <div id="float" class="numbers">5</div>
     <p>
         Mechanizm el. pływających pozwala usunąć wybrany element z normalnego rozkładu strony i umieścić go tuż przy prawej lub lewej krawędzi ekranu. <br />
         Taki element pływający staje się elementem blokowym, wokół którego rozmieszczana jest pozostała zawartość strony.
@@ -98,15 +98,17 @@
         Może mieć wartości: left, right, both, none. (czwarty kwadrat ma "clear: left" więc zostaje przeniesiony na dół)
     </p>
 
-    <div id="clear"></div>
-    <div id="clear"></div>
-    <div id="clear"></div>
+    <div class="clear"></div>
+    <div class="clear"></div>
+    <div class="clear"></div>
 
-    <div id="clearLeft"></div>
-    <div id="clear"></div>
-    <div id="clear"></div>
+    <div class="clearLeft"></div>
+    <div class="clear"></div>
+    <div class="clear"></div>
 
-    <h1 id="special">Tworzenie układów wielukolumnowych</h1>
+    <hr>
+
+    <h1>Tworzenie układów wielukolumnowych</h1>
 
     <p>
         Można je tworzyć przy użyciu el. "div" i wł. "float: left", dobrze jest dodać wł. "margin" - która zapewni odstęp między poszczególnymi kolumnami.

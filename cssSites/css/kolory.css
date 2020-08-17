@@ -10,6 +10,7 @@ p.two {
 body {
     background-color: rgb(24, 26, 27);
     color: white;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #important {
