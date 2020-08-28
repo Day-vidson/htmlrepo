@@ -1,22 +1,31 @@
 body {
     background-color: rgb(24, 26, 27);
     color: white;
+    overflow: hidden;
 }
 
 li {
-    width: fit-content;
-    height: fit-content;
+    /* width: fit-content;
+    height: fit-content; */
+    width: 90%;
+    height: 50px;
     padding: 8px;
     margin: 10px;
     background-image: linear-gradient(135deg, rgb(41, 41, 41), rgb(71, 71, 71));
-    border-radius: 16px;
+    border-radius: 40px;
     color: white;
     list-style-type: none;
+    font-size: 2.5em;
 }
 
 a {
     color: white;
     text-decoration: none;
+
+    /* To pozwala aby cały, div był "klikalny", a nie tylko słowo (el. a) */
+    width: 100%;
+    height: 100%;
+    -webkit-appearance: button;
 }
 
 .nav {
@@ -30,10 +39,11 @@ a {
     height: 400px; */
     width: 45%;
     height: fit-content;
-    border: 1px solid white;
+    /* border: 1px solid white; */
     margin: 20px;
-    padding: 10px;
     float: left;
+    text-align: center;
+    overflow-y: auto;
 
 }
 
@@ -42,8 +52,16 @@ a {
     height: 500px; */
     width: 45%;
     height: fit-content;
-    border: 1px solid white;
+    max-height: 575px;
+    min-height: 45% ;
+    /* border: 1px solid white; */
     margin: 20px;
-    padding: 10px;
     float: left;
+    text-align: center;
+    overflow-y: auto;
+}
+
+/* Pozwala scrollować, lecz nie pokazuje paska przewijania */
+.css::-webkit-scrollbar {
+    display: none;
 }
