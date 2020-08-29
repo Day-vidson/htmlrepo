@@ -141,6 +141,21 @@
         <p>Tekst</p>
     </div>
 
+    <a href="./uklad.html" class="uklad2">Część druga</a>
+
+    <hr />
+
+    <h1>Stosowanie wielu arkuszy stylów</h1>
+
+    <p>
+        Jeśli chcemy dołączyc do strony więcej niż 1 arkusz stylów, można to zrobić na 2 sposoby: <br />
+        <ol>
+            <li>W el. "head" dopisujemy kilka "link" - każdy do innego arkusza stylów;</li>
+            <li>Albo linkujemy jeden arkusz stylów, w którym dopisujemy na <span class="underline">początku</span> <span class="important">" @import url("styles.css") "</span> importując pozostałe.</li>
+        </ol>
+        <span class="important">Jeśli użyjemy @import to ten arkusz będzie "ostatnim" z najwyższym priorytetem dla reguł CSS.</span>
+    </p>
+
     <a href="../index.html" class="float">
         <i class="fa fa-map my-float"></i>
     </a>

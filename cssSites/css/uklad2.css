@@ -18,6 +18,8 @@ li {
     padding: 5px;
 }
 
+/* -----------------------------------Część pierwsza----------------------------------------- */
+
 #info {
     width: 960px;
     margin: 0 auto;
@@ -80,6 +82,24 @@ li {
     height: 10em;
     margin-bottom: 1em;
 }
+
+/* -----------------------------------Część trzecia----------------------------------------- */
+
+#info3 {
+    overflow: auto;
+}
+
+#nav3, #feature3, .article3, #footer3 {
+    background-color: #5e5e5e;
+    margin-top: 20px;
+    padding: 10px 0px 5px 0px;
+}
+
+#feature3, .article3 {
+    height: 100px;
+}
+
+/* ----------------------------------------------------------------------------------------- */
 
 .important {
     color: red;

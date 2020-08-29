@@ -13,6 +13,10 @@ p {
     margin: 15px;
 }
 
+a {
+    color: lawngreen;
+}
+
 dt {
     margin: 15px;
 }
@@ -96,6 +100,20 @@ div[class^="column"] {
 
 #column1of2 {
     width: 60%;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.uklad2{
+    float: left;
+    clear: both;
+    position: static;
+    left: 20px;
+    top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
 }
 
 .important {
