@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/obrazy.css" type="text/css">
+
+    <title>Obrazy</title>
+</head>
+<body>
+    <h1>Obrazy</h1>
+    <p>
+        Aby dodać obraz do strony html można użyć el. img. W arkuszu stylów można określić np. wielkość obrazów.
+    </p>
+
+    <img src="images/apple.jpg" class="large" alt="Jabłko">
+    <img src="images/apple.jpg" class="medium" alt="Jabłko">
+    <img src="images/apple.jpg" class="small" alt="Jabłko">
+
+    <h1>Wyrównanie obrazów</h1>
+
+    <p>
+        Aby wyrównac obrazy np. względem tekstu można utworzyć klasę CSS która będzie określała ich zachowanie. 
+        Dobrze jest dodać margines, by otaczający je tekst nie stykał się z ich krawędziami.
+    </p>
+
+    <p>
+        <img src="images/apple.jpg" class="align-left small" alt="Jabłko">
+        Smak dojrzałych jabłek jabłoni domowej jest słodko-kwaskowaty, rozmaite odmiany mogą być bardziej lub mniej słodkie lub kwaśne. 
+        Jabłka są kształtem zbliżone do kuli, z zagłębieniem na szczycie, z którego wystaje szypułka (pot. ogonek), na którym 
+        jabłko rośnie na drzewie, oraz z wylotem gniazda nasiennego u dołu. Przeciętne jabłko waży około 150 gramów. Miąższ jabłka jest sztywny, 
+        chrupki i pełny przezroczystego soku. Po długim przechowywaniu jabłko staje się miękkie i pomarszczone, ale nadal jadalne.
+    </p>
+
+    <br>
+    
+    <p>
+        <img src="images/apple.jpg" class="align-right small" alt="Jabłko">
+        Smak dojrzałych jabłek jabłoni domowej jest słodko-kwaskowaty, rozmaite odmiany mogą być bardziej lub mniej słodkie lub kwaśne. 
+        Jabłka są kształtem zbliżone do kuli, z zagłębieniem na szczycie, z którego wystaje szypułka (pot. ogonek), na którym 
+        jabłko rośnie na drzewie, oraz z wylotem gniazda nasiennego u dołu. Przeciętne jabłko waży około 150 gramów. Miąższ jabłka jest sztywny, 
+        chrupki i pełny przezroczystego soku. Po długim przechowywaniu jabłko staje się miękkie i pomarszczone, ale nadal jadalne.
+    </p>
+    
+    <br>
+
+    <p>
+        <img src="images/apple.jpg" class="align-center" alt="Jabłko">
+        Smak dojrzałych jabłek jabłoni domowej jest słodko-kwaskowaty, rozmaite odmiany mogą być bardziej lub mniej słodkie lub kwaśne. 
+        Jabłka są kształtem zbliżone do kuli, z zagłębieniem na szczycie, z którego wystaje szypułka (pot. ogonek), na którym 
+        jabłko rośnie na drzewie, oraz z wylotem gniazda nasiennego u dołu. Przeciętne jabłko waży około 150 gramów. Miąższ jabłka jest sztywny, 
+        chrupki i pełny przezroczystego soku. Po długim przechowywaniu jabłko staje się miękkie i pomarszczone, ale nadal jadalne.
+    </p>
+
+    <h1>Obrazy tła</h1>
+
+    <div class="myBackground">
+        <p>
+            Wł. "background-image" pozwala ustawić obraz jako tło strony.
+        </p>
+    </div>
+
+    <p>
+        Jeśli obraz jest zbyt mały, będzie on powtarzany, zależnie od wybranej opcji dla "background-repeat".
+        <ul>
+            <li>repeat =  Domyślnym sposobem powtarzania jest "repeat", obraz powielany jest w pionie i w poziomie</li>
+            <li>repeat-x = tylko w poziomie </li>
+            <li>repeat-y = tylko w pionie </li>
+            <li>no-repeat = obraz zostaje wyświetlony tylko raz</li>
+                <ul>
+                    Wł. "background-attachment" określa, czy obraz tła powinien pozostać w tym samym miejscu, 
+                    czy ma się przesuwać, gdy będziemy przewijać stronę.
+                    <li>fixed - Obraz pozostaje w tym samym miejscu</li>
+                    <li>scroll - Obraz będzie się przesuwał wraz z zawartością strony</li>
+                </ul>
+        </ul>
+    </p>
+
+    <a href="https://www.w3schools.com/cssref/playit.asp?filename=playcss_background-repeat">Przykłady bg-repeat</a>
+    <br>
+    <a href="https://www.w3schools.com/cssref/tryit.asp?filename=trycss_background-attachment">Przykłady bg-attachment</a>
+    <br>
+
+    <h1>Położenie obrazu tła</h1>
+    <p>
+        Wł. "background-position" służy do pozycjonowania obrazu tła na stronie. <br>
+        Zazwyczaj ma ona parę wartości, pierwsza z nich mówi o położeniu w poziomie, druga w pionie. <br>
+        Wartości te można określać w procentach lub nazwach np.: "center top". <br>
+        Jeśli zostanie podana tylko jedna właściwość druga przyjmie wartość "center".
+    </p>
+
+    <a href="../index.html" class="float">
+        <i class="fa fa-map my-float"></i>
+    </a>
+</body>
+</html>
