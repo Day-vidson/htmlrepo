@@ -41,12 +41,13 @@ a {
     height: 400px; */
     width: 45%;
     height: fit-content;
+    max-height: 610px;
+    min-height: 45% ;
     /* border: 1px solid white; */
     margin: 20px;
     float: left;
     text-align: center;
     overflow-y: auto;
-
 }
 
 .css {
@@ -65,5 +66,9 @@ a {
 
 /* Pozwala scrollować, lecz nie pokazuje paska przewijania */
 .css::-webkit-scrollbar {
+    display: none;
+}
+
+.html::-webkit-scrollbar {
     display: none;
 }
