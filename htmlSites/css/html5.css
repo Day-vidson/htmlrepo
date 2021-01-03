@@ -13,6 +13,10 @@ a {
     color: lawngreen;
 }
 
+.underline {
+    text-decoration: underline;
+}
+
 .important {
     color: red;
 }

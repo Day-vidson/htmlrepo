@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/html5.css" type="text/css">
+
+    <title>Html 5</title>
+</head>
+<body>
+    <h1>Html 5 i jego nowe znaczniki</h1>
+    <p>
+        W wersji Html 5 zostało dodanych kilka nowych znaczników. Są one dużym ułatwieniem dla webdeveloper'ów,
+        dzięki nim kod jest łatwiejszy do przeczytania i bardziej opisuje swoje funkcje. Są one nowszą alternatywą dla el. "div".
+    </p>
+
+    <img src="images/html5.png">
+
+    <p>Linki do stron z nowymi znacznikami:</p>
+    <ul>
+        <li><a href="https://www.w3schools.com/html/html5_semantic_elements.asp">w3schools</a></li>
+        <li><a href="http://kamakaczmarek.net/html-5-znaczniki-section-article-aside-hgroup-header-footer-nav-main-details-summary/">inna stronka</a></li>
+    </ul>
+
+    <h1>Nagłowki i stopki</h1>
+    <p>
+        Elementy "header" i "footer" mogą być używane do tworzenia:
+        <ul>
+            <li>głównego nagłówka i stopki prezentowanych odpowiednio na górze i na dole każdej strony witryny;</li>
+            <li>nagłówka i stopki umieszczanych w poszczegolnych elementach "article" oraz "section".</li>
+        </ul>
+    </p>
+
+    <h1>Nawigacja</h1>
+    <p>
+        El. "nav" jest używany do umieszczenia <span class="important">głównych bloków nawigacyjnych witryny</span> , 
+        takich jak lista łączy do jej głównych działów.
+    </p>
+
+    <h1>Artykuły</h1>
+    <p>
+        El. "article" pełni fukncję pojemnika, w którym są umieszczane dowolne sekcje strony, przy czym powinny one być stosunkowo 
+        autonomiczne i nadawać się do zebrania w większą grupę.
+    </p>
+    <p>
+        Jeśli strona zawiera kilka artykułów, to każdy powinien być umieszczony w osobnym el. "article".
+    </p>
+
+    <h1>Sekcje boczne</h1>
+    <p>
+        El. "aside" ma kilka zastosowań, w zależności czy znajduje się w el. "article" czy poza nim.<br>
+        Jeśli znajduje się w "article", może on zawierać wyróżniony cudzysłów lub słownik; <br>
+        Jeśli jest umieszczony poza el. "article", to służy jak pojemnik dla treści związanych z całą stroną. 
+        Np. łącza do innych sekcji witryny, ostatnie wpisy autora na Twitterze czy reklamy.
+    </p>
+
+    <h1>Sekcje</h1>
+    <p>
+        El. "section" służy do grupowania powiązanych ze sobą elementów. Zazwyczaj każda taka sekcja ma własny nagłówek. 
+        Można w niej umieścić np. kilka el. "article". <br>
+        Alternawynie jeśli strona zawiera bardzo długi artykuł, to korzystając z el. "section", można podzielić jego treść na kilka fragmentów.
+    </p>
+    <p>
+        <span class="important">Elementu "section" nie należy używać jako pojemnika zawierającego całą treść strony</span>  (chyba że całą jej zawartość stanowi jeden, 
+        spójny fragment treści). <br>
+        Jeśli szukamy elementu, który nadałby się do roli pojemnika <span class="underline">zawierającego cała stronę</span> , w tym celu wciąż najlepiej zastosować element "div". 
+    </p>
+
+<!--     
+    <main>
+        <article>
+            <header>Zimorodek</header>
+            <figure>
+                <img src="images/ptak3.jpg" alt="Zimorodek">
+                <figcaption></figcaption>
+            </figure>
+            
+            <footer>&copy; Photographer</footer>
+        </article>
+    </main> -->
+
+    <a href="../index.html" class="float">
+        <i class="fa fa-map my-float"></i>
+    </a>
+</body>
+</html>
