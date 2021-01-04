@@ -13,6 +13,18 @@ a {
     color: lawngreen;
 }
 
+code {
+    display: block;
+    width: fit-content;
+    height: fit-content;
+    margin: 10px;
+    color: red;
+}
+
+.image {
+    float: right;
+}
+
 .underline {
     text-decoration: underline;
 }

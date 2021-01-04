@@ -15,7 +15,13 @@
         dzięki nim kod jest łatwiejszy do przeczytania i bardziej opisuje swoje funkcje. Są one nowszą alternatywą dla el. "div".
     </p>
 
-    <img src="images/html5.png">
+    <p>
+        <span class="important">
+            Wszędzie tam gdzie nowe elemetny HTML5 nie nadają się do zastosowania, trzeba użyć "div".
+        </span>
+    </p>
+
+    <img class="image" src="images/html5.png">
 
     <p>Linki do stron z nowymi znacznikami:</p>
     <ul>
@@ -67,6 +73,49 @@
         Jeśli szukamy elementu, który nadałby się do roli pojemnika <span class="underline">zawierającego cała stronę</span> , w tym celu wciąż najlepiej zastosować element "div". 
     </p>
 
+    <h1>Grupy nagłówków</h1>
+    <p>
+        El. "hgroup" służy do grupowania kilku elementów "h1" - "h6" by były traktowane jako jeden nagłówek. <br>
+        Chociaż to rozwiązanie nie zostało do końca zaakceptowane w html5. <br>
+        <a href="https://www.w3.org/TR/html52/common-idioms-without-dedicated-elements.html">Więcej o kilku nagłówkach naraz</a>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hgroup">Użycie "hgroup"</a>
+    </p>
+
+    <h1>Ilustracje</h1>
+    <p>
+        El. "figure" może zawierać dowolne treści, do których odwołuje się główna część artykułu. <br>
+        Koniecznie naley zuważyć, że artykuł nie powinien tracić znaczenia w przypadku przesunięcia zawartości el. "figure" 
+        (do innej częsci strony lub nawet przeniesienia go na inną stronę). <br>
+        <span class="important">Dlatego należy go używać wyłącznie w sytuacjach, gdy w treści artykułu znajduje się jedynie odwołanie do elementu (a nie gdy stanowi on integralną część tej treści)</span> <br>
+        Kilka zastosowań dla el. "figure":
+        <ul>
+            <li>obrazy,</li>
+            <li>kilpy wideo,</li>
+            <li>wykresy,</li>
+            <li>diagramy,</li>
+            <li>listingu kodu,</li>
+            <li>teksty uzupełniające główną treść artykułu.</li>
+        </ul>
+        W el. "figure" można umieszczać el. "figcaption" służacy do podania tekstowego opisu zawartości elementu "figure".
+    </p>
+
+    <h1>ułatwienie starszym przeglądarkom zrozumienia nowego kodu</h1>
+    <p>
+        Starsze przeglądarki, które nie obsługują HTML5 będą traktować nowe elementy jako el. wewnątrzwierszowe. <br>
+        Aby im pomóc wystarczy dodać taką regułę do arkusza stylów: <br>
+        <code>
+            header, section, footer, aside, nav, article, figure {
+                display: block;
+            }
+        </code>
+        Przeglądarki starze niż IE 9 mogły zrozumieć kod HTML5 musimy dodać instrukcję warunkową do kodu HTML naszej strony, nazywanego podkładką HTML5 (ang. HTML5 shim)
+        <code>
+            &#60!--[if lt IE 9]> <br>
+                &nbsp &nbsp &#60script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> <br>
+            &#60![endif]-->
+        </code>
+    </p>
+    
 <!--     
     <main>
         <article>

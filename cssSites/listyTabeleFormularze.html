@@ -34,7 +34,6 @@
     </ol>
 
     <h2>Obrazy jako znaczniki</h2>
-
     <p>
         Można użyć obrazów jako znaczników list. Słuzy do tego el. "list-style-image"
     </p>
@@ -43,7 +42,24 @@
         <li class="odstep">example</li>
     </ul>
 
-    <h2>Zapis skrótowy</h2>
+    <h2>Umiejscowienie znaczników</h2>
+    <p>
+        Domyślnie zawartość list jest nieco wcinana natomiast wł. "list-style-position" pozwala określić czy znaczniki listy powinny 
+        znajdować się wewnątrz, czy na zewnątrz pudełka zawierającego główną treść listy.
+    </p>
+    <ul class="rozmiar outside">
+        <li>Jabłko – jadalny, kulisty owoc drzew z rodzaju jabłoń Malus. </li>
+        <li>Jabłko – jadalny, kulisty owoc drzew z rodzaju jabłoń Malus.</li>
+        <li>Jabłko – jadalny, kulisty owoc drzew z rodzaju jabłoń Malus.</li>
+    </ul>
+
+    <ul class="rozmiar inside">
+        <li>Jabłko – jadalny, kulisty owoc drzew z rodzaju jabłoń Malus.</li>
+        <li>Jabłko – jadalny, kulisty owoc drzew z rodzaju jabłoń Malus.</li>
+        <li>Jabłko – jadalny, kulisty owoc drzew z rodzaju jabłoń Malus.</li>
+    </ul>
+
+    <h2 class="clear">Zapis skrótowy</h2>
     <p>
         Wszystkie powyższe informacje można zapisać za pomocą el. "list-style". Można określić w nim styl znacznika lsty, jego obraz oraz położenie.
     </p>
@@ -149,7 +165,9 @@
         Aby zmienić wygląd kursora po najechaniu na element, należy dopisać do arkusza stylów właściwość "cursor" i nadać mu odpowiednią wartość.
     </p>
 
-    <div id="cursor"></div>
+    <div class="cursors" id="customCursor"></div>
+
+    <div class="cursors" id="notAllowedCursor"></div>
 
     <a href="https://www.w3schools.com/cssref/pr_class_cursor.asp" target="blank">Więcej o kursorach</a>
 
