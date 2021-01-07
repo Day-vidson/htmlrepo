@@ -32,23 +32,6 @@ h2 {
     color: lawngreen;
 }
 
-div.cursors {
-    width: 100px;
-    height: 100px;
-    border-radius: 15px;
-    background-color: #00aaff;
-    margin: 20px;
-    float: left;
-}
-
-#customCursor {
-    cursor: url(../cursors/cursor.gif), auto;
-}
-
-#notAllowedCursor {
-    cursor: not-allowed;
-}
-
 #styleZnaczników {
     list-style-type: none;
 }

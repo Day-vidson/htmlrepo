@@ -52,6 +52,14 @@ div.myBackground {
     width: fit-content;
 }
 
+.background {
+    width: 100px;
+    height: 100px;
+    border: 2px lawngreen solid;
+    background-image: url("../images/pattern.png");
+    background-repeat: repeat;
+}
+
 .important {
     color: red;
 }

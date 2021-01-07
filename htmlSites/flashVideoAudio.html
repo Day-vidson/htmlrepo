@@ -71,8 +71,8 @@
     <p style="color:red"><b>Jeśli będziemy zmieniać wielkość okna flash playery będą się bugować, jeśli użyjemy "video" problem nie będzie występował.</b></p>
     
     <!-- MOŻNA DODAĆ "p" ALE NIE TRZEBA, WSZYSTKO POMIĘDZY "video" ZOSTANIE WYŚWIETLONE -->
-    <video src="video/example.mp4" poster="sciezkaDoMiniaturki - images/puppy.jpg" width="400" height="300" preload controls loop>
-        <p>Film o szczeniaku.</p>
+    <video src="video/example.mp4" poster="images/poster.jpg" width="50%" height="50%" preload controls loop>
+        <p>Film</p>
     </video>
 
     <p>Atrybuty "video":</p>
@@ -80,9 +80,9 @@
         <li>preload="none/auto/metadata"</li>
         <li>src="" określa ścieżkę</li>
         <li>poster="sciezkaDoObrazka" - można w nim okreslić miniaturkę</li>
-        <li>width, height</li>
+        <li>width, height - rozmiar okna video</li>
         <li>controls - pokazuje elementy sterujące odtwarzaniem</li>
-        <li>autoplay</li>
+        <li>autoplay - czy będzie się sam odtwarzać</li>
         <li>loop - będzie odtwarzać w pętli</li>
     </ul>
 
@@ -98,7 +98,7 @@
     </p>
     
     <h2  style="color:greenyellow">Dobrze jest podać mp4 jako pierwszy z "source". Inaczej nie będzie działać na iPadzie</h2>
-    <video poster="images/puppy.jpg" width="400" height="300" preload controls loop>
+    <video poster="images/poster.jpg" width="50%" height="50%" preload controls loop>
         <source src="video/example.mp4" type="video/mp4">
         <source src="video/example.webm" type="video/webm">
         <p>Przykładowy film.</p>

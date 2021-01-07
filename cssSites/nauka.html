@@ -115,6 +115,85 @@
         <li><a href="http://www.quirksmode.org" target="blank">quirksmode.org</a></li>
     </ul>
 
+    <h1>Selektory atrybutów</h1>
+
+    <p id="important">Można zmienić "class" na każdy inny atrybut.</p>
+
+    <table border="1">
+        <tr>
+            <th>Selektor</th>
+            <th>Znaczenie</th>
+            <th>Przykład</th>
+        </tr>
+        <tr>
+            <td>Istnienie</td>
+            <td>
+                [] <br />
+                Pozwala znaleźć konkretny atrybut (niezalezne od tego, jaką ma wartość.)
+            </td>
+            <td>
+                p[class] <br />
+                Odnosi się do wszystkich elementów &#60;p&#62;, w których został podany atrybut class.
+            </td>
+        </tr>
+        <tr>
+            <td>Równość</td>
+            <td>
+                [=] <br />
+                Pozwala znaleźć konkretny atrybut o określonej wartości.
+            </td>
+            <td>
+                p[class="dog"] <br />
+                Odnosi się do wszystkich elementów &#60;p&#62;, w których atrybut class ma wartość dog.
+            </td>
+        </tr>
+        <tr>
+            <td>Odstęp</td>
+            <td>
+                [~=] <br />
+                Pozwala znaleźć konkretny atrybut. którego wartość znajduje się na liście słów oddzielonych od siebie przecinkami.
+            </td>
+            <td>
+                p[class~=] <br />
+                Odnosi się do wszystkich elementów &#60;p&#62;, zawierających atrybut class, którego wartość znajduje się na liście podanych wartości.
+            </td>
+        </tr>
+        <tr>
+            <td>Początkowy fragment</td>
+            <td>
+                [^=] <br />
+                Pozwala znaleźć konkretny atrybut, którego wartość rozpoczyna się podanym łańcuchem znaków.
+            </td>
+            <td>
+                p[class^="d"] <br />
+                Odnosi się do wszystkich elementów &#60;p&#62;, których wartość class rozpoczyna się od litery (łańcucha znaków) "d"
+            </td>
+        </tr>
+        <tr>
+            <td>Fragment łańcucha</td>
+            <td>
+                [*=] <br />
+                Pozwala znaleźć konkretny atrybut, którego wartość zawiera ciąg znaków.
+            </td>
+            <td>
+                p[class^="do"] <br />
+                Odnosi się do wszystkich elementów &#60;p&#62;, których wartość class zawiera ciąg znaków "do"
+            </td>
+        </tr>
+        <tr>
+            <td>Zakończenie</td>
+            <td>
+                [$=] <br />
+                Pozwala znaleźć konkretny atrybut, którego wartość kończy się podanym ciągiem znaków.
+            </td>
+            <td>
+                p[class$="g"] <br />
+                Odnosi się do wszystkich elementów &#60;p&#62;, których wartość class kończy litera (łańcuch znaków) "g"
+            </td>
+        </tr>
+        
+    </table>
+
     <a href="../index.html" class="float">
         <i class="fa fa-map my-float"></i>
     </a>

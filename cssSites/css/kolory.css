@@ -4,6 +4,19 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+h1 {
+    color: aqua;
+}
+
+p {
+    padding: 5px;
+    margin: 0px;
+}
+
+a {
+    color: lawngreen;
+}
+
 #important {
     color: red;
 }
@@ -21,13 +34,12 @@ body {
     padding: inherit;
 }
 
-a {
-    color: lawngreen;
+#customCursor {
+    cursor: url(../cursors/cursor.gif), auto;
 }
 
-p {
-    padding: 5px;
-    margin: 0px;
+#notAllowedCursor {
+    cursor: not-allowed;
 }
 
 p.zero {
@@ -74,6 +86,15 @@ p.thirteen {
 }
 p.fourteen {
     background-color: rgb(0, 136, 221);
+}
+
+div.cursors {
+    width: 100px;
+    height: 100px;
+    border-radius: 15px;
+    background-color: #00aaff;
+    margin: 20px;
+    float: left;
 }
 
 .gradient {
