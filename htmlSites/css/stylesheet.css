@@ -13,6 +13,10 @@ h1 {
     color: aqua;
 }
 
+#nocolour {
+    color: inherit;
+}
+
 #important {
     color: red;
 }
